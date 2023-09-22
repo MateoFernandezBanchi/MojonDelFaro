@@ -5,6 +5,7 @@ import { Clases } from './pages/Clases';
 import { Inicio } from './pages/Inicio';
 import Relax from './pages/Relax';
 import PiletaLibre from './pages/PiletaLibre';
+import Conocenos from './pages/Conocenos';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/clases" element={<Clases/>} />
           <Route path="/relax" element={<Relax/>} />
           <Route path="/piletalibre" element={<PiletaLibre/>} />
+          <Route path="/conocenos" element={<Conocenos/>} />
         </Routes>
       </div>
     </Router>

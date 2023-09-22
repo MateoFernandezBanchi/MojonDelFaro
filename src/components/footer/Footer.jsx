@@ -21,7 +21,7 @@ const Footer = () => {
           height: "15vh",
         }}
         alt="Logo Mojo del Faro"
-        src="src/assets/LogoFooter.png"
+        src="/assets/LogoFooter.png"
       />
       <List className="footerList">
         <ListItem>
