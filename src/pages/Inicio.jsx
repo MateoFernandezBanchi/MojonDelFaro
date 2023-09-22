@@ -26,7 +26,7 @@ export const Inicio = () => {
           marginTop: "70px",
         }}
         alt="Imagen agua pileta"
-        src="src/assets/pileta1.png"
+        src="public/assets/pileta1.png"
       />
       <List sx={{ width: "90vw", margin: "0 auto" }}>
         <ListItem sx={{ flexDirection: "column" }}>
@@ -38,7 +38,7 @@ export const Inicio = () => {
               gap: "20px",
             }}
           >
-            <Avatar src="src/assets/Icon1.png"></Avatar>
+            <Avatar src="public/assets/Icon1.png"></Avatar>
             <h2>Pileta climatizada</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
@@ -55,7 +55,7 @@ export const Inicio = () => {
               gap: "20px",
             }}
           >
-            <Avatar src="src/assets/Icon2.png"></Avatar>
+            <Avatar src="public/assets/Icon2.png"></Avatar>
             <h2>Sauna seco</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
@@ -74,7 +74,7 @@ export const Inicio = () => {
               gap: "20px",
             }}
           >
-            <Avatar src="src/assets/Icon3.png"></Avatar>
+            <Avatar src="public/assets/Icon3.png"></Avatar>
             <h2>Ph equilibrado</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
@@ -92,7 +92,7 @@ export const Inicio = () => {
               gap: "20px",
             }}
           >
-            <Avatar src="src/assets/Icon4.png"></Avatar>
+            <Avatar src="public/assets/Icon4.png"></Avatar>
             <h2>Clases</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
@@ -146,11 +146,11 @@ export const Inicio = () => {
           }}
         >
           <CardServicios
-            image={"src/assets/PiletaLibre.png"}
+            image={"public/assets/PiletaLibre.png"}
             text={"Pileta libre"}
           />
-          <CardServicios image={"src/assets/Clases.png"} text={"Clases"} />
-          <CardServicios image={"src/assets/Relax.png"} text={"Relax"} />
+          <CardServicios image={"public/assets/Clases.png"} text={"Clases"} />
+          <CardServicios image={"public/assets/Relax.png"} text={"Relax"} />
         </Box>
       </Box>
 
