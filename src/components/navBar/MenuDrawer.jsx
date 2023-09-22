@@ -16,7 +16,7 @@ export const MenuDrawer = () => {
             <Link to="/relax">Relax</Link> 
             </ListItem>
             <ListItem>
-                Pileta libre
+            <Link to="/piletalibre">Pileta Libre</Link> 
             </ListItem>
             <ListItem>
                 Conocenos

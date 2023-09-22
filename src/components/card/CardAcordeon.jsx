@@ -24,8 +24,9 @@ const ExpandMore = styled((props) => {
 export default function CardAcordeon({
   imagen,
   titulo,
-  profesor,
-  horario,
+  subtitulo,
+  texto1,
+  texto2,
   precio,
   texto,
 }) {
@@ -71,10 +72,13 @@ export default function CardAcordeon({
               {titulo}
             </Typography>
             <Typography variant="h3" sx={{ fontSize: "14px" }}>
-              {profesor}
+              {subtitulo}
             </Typography>
             <Typography variant="h4" sx={{ fontSize: "14px" }}>
-              {horario}
+              {texto1}
+            </Typography>
+            <Typography variant="h4" sx={{ fontSize: "14px" }}>
+              {texto2}
             </Typography>
           </Box>
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
