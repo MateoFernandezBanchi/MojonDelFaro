@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <>
       <header>
-        <Avatar src="src/assets/Logo.png"></Avatar>
+        <Avatar src="/assets/Logo.png"></Avatar>
         {/* <Button onClick={()=> setOpen(!open)} sx={{border:"none"}}>
           {open? <CloseIcon sx={{ fontSize: 40, color: "white" }}/> : <MenuIcon sx={{ fontSize: 40, color: "white" }}/>}
         </Button> */}

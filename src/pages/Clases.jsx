@@ -17,7 +17,7 @@ export const Clases = () => {
         }}
       >
         <CardAcordeon
-          imagen={"src/assets/NatacionAdultos.png"}
+          imagen={"/assets/NatacionAdultos.png"}
           titulo={"Natación Adultos"}
           profesor={"Profe: Lucas Suarez"}
           horario={"Martes y miércoles 17.30 a 18.30"}
@@ -27,7 +27,7 @@ export const Clases = () => {
           }
         />
         <CardAcordeon
-          imagen={"src/assets/NatacionNiños.png"}
+          imagen={"/assets/NatacionNiños.png"}
           titulo={"Natación Niños"}
           profesor={"Profes: Mónica Millapi y Lucas Suarez. De 8 a 12 años"}
           horario={"Miércoles 18h | Sábado 11h"}
@@ -37,7 +37,7 @@ export const Clases = () => {
           }
         />
         <CardAcordeon
-          imagen={"src/assets/GimnasiaAcuatica.png"}
+          imagen={"/assets/GimnasiaAcuatica.png"}
           titulo={"Gimnasia Acuática"}
           profesor={"Profe: Lucas Suarez"}
           horario={"Martes y miércoles 17.30 a 18.30hs"}

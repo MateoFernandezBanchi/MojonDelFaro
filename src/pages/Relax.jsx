@@ -10,7 +10,7 @@ const Relax = () => {
     <>
       <Box sx={{ margin: "15vh auto" }}>
         <CardAcordeon
-          imagen={"src/assets/SaunaSeco.png"}
+          imagen={"/assets/SaunaSeco.png"}
           titulo={"Sauna Seco"}
           profesor={"Sesión:30min"}
           horario={""}
@@ -20,7 +20,7 @@ const Relax = () => {
           }
         />
         <CardAcordeon
-          imagen={"src/assets/Pileta.png"}
+          imagen={"/assets/Pileta.png"}
           titulo={"Hidromasaje y sauna"}
           profesor={"Sesión: 1.30h"}
           horario={""}
