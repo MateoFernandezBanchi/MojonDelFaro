@@ -9,6 +9,7 @@ const WhatsappButton = ({ text }) => {
         backgroundColor: "rgba(56, 161, 105, 1)",
         color: "white",
         padding: "8px 25px",
+        textTransform:"none"
       }}
     >
       <WhatsAppIcon fontSize="large" />

@@ -43,7 +43,7 @@ export default function Navbar() {
                 backgroundColor: "transparent",
                 color: "red",
                 height:"auto",
-                width:"45vw",
+                width:"55vw",
                 marginRight:"2rem",
                 top:"70px"
               }}}

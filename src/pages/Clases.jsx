@@ -1,12 +1,13 @@
 import React from "react";
 import CardAcordeon from "../components/card/CardAcordeon";
 import Footer from "../components/footer/Footer";
-import { Box, List, ListItem, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { WhatsappButton } from "../components/button/WhatsappButton";
-import CardBlue from "../components/card/CardBlue";
 import CardNormas from "../components/card/CardNormas";
+import ScrollToTop from "../helpers/ScrollToTop";
 
 export const Clases = () => {
+  ScrollToTop();
   return (
     <>
       <Box
@@ -21,7 +22,8 @@ export const Clases = () => {
           imagen={"/assets/NatacionAdultos.png"}
           titulo={"Natación Adultos"}
           subtitulo={"Profe: Lucas Suarez"}
-          texto1={"Martes y miércoles 17.30 a 18.30"}
+          texto1={"Martes y miércoles "}
+          texto2={"17.30 a 18.30"}
           precio={"$6000"}
           texto={
             "La natación es una forma relajante de hacer ejercicio para todo el cuerpo. Es una actividad que tonifica los músculos, protege las articulaciones, mejora la circulación, favorece el sistema cardiovascular, recompone la postura y reduce la presión arterial, al mismo tiempo que proporciona calma mental, concentración y conexión con nuestro cuerpo."
@@ -42,7 +44,8 @@ export const Clases = () => {
           imagen={"/assets/GimnasiaAcuatica.png"}
           titulo={"Gimnasia Acuática"}
           subtitulo={"Profe: Lucas Suarez"}
-          texto1={"Martes y miércoles 17.30 a 18.30hs"}
+          texto1={"Martes y miércoles"}
+          texto2={"17.30 a 18.30hs"}
           precio={"$8500"}
           texto={
             "Son ejercicios acuáticos que tonifican los músculos aprovechando la falta de gravedad en el agua, lo que los hace ideales para personas que buscan actividad suave. Mejoran la condición física al trabajar grupos musculares específicos y también ayudan en la recuperación de lesiones."
@@ -52,7 +55,7 @@ export const Clases = () => {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <WhatsappButton text={"inscripciones"} />
       </Box>
-     <CardNormas/>
+      <CardNormas />
       <Footer />
     </>
   );

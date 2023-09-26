@@ -1,12 +1,13 @@
-import { Box, Divider, List, ListItem, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
 import CardAcordeon from "../components/card/CardAcordeon";
-import CardBlue from "../components/card/CardBlue";
 import Footer from "../components/footer/Footer";
-import { GreenButton, WhatsappButton } from "../components/button/WhatsappButton";
+import { GreenButton } from "../components/button/WhatsappButton";
 import CardNormas from "../components/card/CardNormas";
+import ScrollToTop from "../helpers/ScrollToTop";
 
 const Relax = () => {
+  ScrollToTop();
   return (
     <>
       <Box sx={{ margin: "15vh auto" }}>
@@ -53,15 +54,26 @@ const Relax = () => {
               marginBottom: "15px",
             }}
           />
-          <Box sx={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
-          <Typography variant="body1" color={"white"} fontSize={"12px"} sx={{ width:"50%" }}>
-            Ofrecé relajación y serenidad con un voucher de acceso al
-            hidromasaje y sauna, brindando un momento de calma y reconexión.
-          </Typography>
-          <GreenButton text="Quiero un voucher" />
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <Typography
+              variant="body1"
+              color={"white"}
+              fontSize={"12px"}
+              sx={{ width: "50%" }}
+            >
+              Ofrecé relajación y serenidad con un voucher de acceso al
+              hidromasaje y sauna, brindando un momento de calma y reconexión.
+            </Typography>
+            <GreenButton text="Quiero un voucher" />
           </Box>
         </Box>
-        <CardNormas/>
+        <CardNormas />
       </Box>
       <Footer />
     </>
