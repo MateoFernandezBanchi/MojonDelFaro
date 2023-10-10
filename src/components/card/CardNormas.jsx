@@ -1,16 +1,18 @@
 import React from 'react'
 import CardBlue from './CardBlue'
 import { List, ListItem, Typography } from '@mui/material'
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 
 const CardNormas = () => {
   return (
     <div>
          <CardBlue>
         <Typography variant="h3" color={"white"} fontSize={"20px"}>
+          <VolunteerActivismIcon sx={{margin:"0 20px"}}/>
           Normas para disfrutar de nuestras instalaciones
         </Typography>
         <List sx={{listStyle:"circle", color:"white"}}>
-          <ListItem >
+          <ListItem>
             Limpieza y Frescura: Antes de ingresar, asegurate de tener el cuerpo
             limpio y sin cremas ni maquillaje para mantener la pileta en
             condiciones óptimas.

@@ -7,17 +7,31 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 const Footer = () => {
   return (
     <Box
+      className="footerContainer"
       sx={{
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "#78b5cb",
+        justifyContent: "space-around",
+        flexDirection: {
+          xs: "row",
+          sm: "row",
+          md: "row",
+          lg: "row-reverse",
+          xl: "row-reverse",
+        },
+        backgroundColor: {
+          xs: "#78b5cb", // Estilo para pantallas extra pequeñas
+          sm: "#78b5cb", // Estilo para pantallas pequeñas
+          md: "#78b5cb", // Estilo para pantallas medianas
+          lg: "#f4f9fc", // Estilo para pantallas grandes
+          xl: "#ffffff", // ,
+        },
       }}
     >
       <Box
         component="img"
         sx={{
-          width: "35vw",
+          width: "auto",
           height: "15vh",
         }}
         alt="Logo Mojo del Faro"
@@ -29,15 +43,17 @@ const Footer = () => {
             <WhatsAppIcon fontSize="large" /> (2920) 222 444
           </a>
         </ListItem>
-        <ListItem >
+        <ListItem>
           <a target="_blank" href="https://www.instagram.com/_mojo_del_faro/">
             <InstagramIcon fontSize="large" />
             mojóndelfaro
           </a>
         </ListItem>
         <ListItem>
-          <a  href="<EMAIL>?subject=Contacto%20de%20la%20web&body=<NAME>%2C
-        Me gustaría saber más sobre los servicios que ofrecemos.">
+          <a
+            href="<EMAIL>?subject=Contacto%20de%20la%20web&body=<NAME>%2C
+        Me gustaría saber más sobre los servicios que ofrecemos."
+          >
             <MailOutlineIcon fontSize="large" />
             mail.mojon@gmail.com
           </a>

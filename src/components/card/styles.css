@@ -1,0 +1,42 @@
+@media screen and (min-width: 1024px) {
+    .cardContent {
+        width:80%;
+        justify-content: flex-start;
+    }
+  .imageCard {
+    width: 40%;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    margin-top: 15px;
+  }
+
+  .cardMainContent {
+    width:auto;
+    display:flex;
+    flex-direction: column;
+
+  }
+  .cardMainContent div{
+    display:flex;
+    justify-content: space-between;
+    padding:3px 15px;
+
+  }
+  .cardFirstContent {
+    display:flex;
+    flex-direction: column;
+  }
+  .boxPrice {
+    align-self: flex-end;
+  }
+  .cardTitle {
+    font-weight: 400;
+    font-size: 25px;
+  }
+
+  /* Card Blue */
+.cardBlue {
+    width:50%;
+}
+
+}

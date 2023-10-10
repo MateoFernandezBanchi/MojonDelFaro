@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import CardNormas from "../components/card/CardNormas";
 import { useLocation } from "react-router-dom";
 import ScrollToTop from "../helpers/ScrollToTop";
+import Footer from "../components/footer/Footer";
 
 const PiletaLibre = () => {
   ScrollToTop();

@@ -57,8 +57,6 @@ const Conocenos = () => {
         <Avatar src="/assets/Avatar3.png" sx={{width:"60px", height:"60px"}}></Avatar>
         </Box>
         </Box>
-   
-    <Footer/>
     </>
 
   );

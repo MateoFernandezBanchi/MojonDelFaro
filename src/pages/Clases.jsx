@@ -56,7 +56,6 @@ export const Clases = () => {
         <WhatsappButton text={"inscripciones"} />
       </Box>
       <CardNormas />
-      <Footer />
     </>
   );
 };

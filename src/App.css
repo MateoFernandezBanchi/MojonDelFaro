@@ -10,6 +10,7 @@
 }
 body {
   background-color: #fff;
+  display: block;
 }
 p, h1, h2, h3, h4, h5, h6 {
   color:black;
@@ -92,4 +93,34 @@ header {
   gap:5px;
   align-items:center;
   font-size:14px;
+}
+
+.listMenuDesktop li {
+  width: auto;
+}
+
+.listMenuDesktop li a {
+  color: white;
+}
+
+@media screen and (min-width:1024px) {
+  .listaInicio {
+    background-image: url("/public/assets/piletaDesktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .listaInicio li {
+    width:40vw
+  }
+  .inicioBoxFlexbox {
+    display: flex;
+    justify-content: space-around;
+  }
+  .horariosInicio {
+    width:30vw;
+  }
+  /* Footer */
+  .footerList li a{
+    color:rgba(92, 92, 92, 1)
+  }
 }

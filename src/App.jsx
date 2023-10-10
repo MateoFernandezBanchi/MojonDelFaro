@@ -6,6 +6,7 @@ import { Inicio } from './pages/Inicio';
 import Relax from './pages/Relax';
 import PiletaLibre from './pages/PiletaLibre';
 import Conocenos from './pages/Conocenos';
+import Footer from './components/footer/Footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/piletalibre" element={<PiletaLibre/>} />
           <Route path="/conocenos" element={<Conocenos/>} />
         </Routes>
+        <Footer/>
       </div>
     </Router>
     

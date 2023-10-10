@@ -13,23 +13,28 @@ import { WhatsappButton } from "../components/button/WhatsappButton";
 import Banner from "../../public/assets/ExperienciaBanner.png";
 import CardServicios from "../components/card/CardServicios";
 import { Link } from "react-router-dom";
+import { DesktopDiv, MobileDiv } from "../components/MediaQuery/ResponsiveDiv";
 
 export const Inicio = () => {
   return (
-    <div style={{ boxSizing: "border-box" }}>
-      <Box
-        component="img"
-        sx={{
-          height: 233,
-          width: "100vw",
-          maxHeight: { xs: 233, md: 167 },
-          maxWidth: { xs: "100vw", md: 250 },
-          marginTop: "70px",
-        }}
-        alt="Imagen agua pileta"
-        src="/assets/pileta1.png"
-      />
-      <List sx={{ width: "90vw", margin: "0 auto 6vh auto" }}>
+    <Box sx={{ boxSizing: "border-box", marginTop: "12vh" }}>
+      <MobileDiv>
+        <Box
+          component="img"
+          sx={{
+            height: 233,
+            width: "100vw",
+            maxHeight: { xs: 233, md: 167 },
+            maxWidth: { xs: "100vw", md: 250 },
+          }}
+          alt="Imagen agua pileta"
+          src="/assets/pileta1.png"
+        />
+      </MobileDiv>
+      <List
+        sx={{ width: "90vw", margin: "0 auto 6vh auto" }}
+        className="listaInicio"
+      >
         <ListItem sx={{ flexDirection: "column" }}>
           <div
             style={{
@@ -132,43 +137,72 @@ export const Inicio = () => {
           }}
         >
           <Link to="/piletalibre">
-          <CardServicios
-            image={"/assets/PiletaLibre.png"}
-            text={"Pileta libre"}
-          />
+            <CardServicios
+              image={"/assets/PiletaLibre.png"}
+              text={"Pileta libre"}
+            />
           </Link>
           <Link to="/clases">
-          <CardServicios image={"/assets/Clases.png"} text={"Clases"} />
+            <CardServicios image={"/assets/Clases.png"} text={"Clases"} />
           </Link>
-          <Link to="/relax">            
-          <CardServicios image={"/assets/Relax.png"} text={"Relax"} />
+          <Link to="/relax">
+            <CardServicios image={"/assets/Relax.png"} text={"Relax"} />
           </Link>
         </Box>
       </Box>
 
-      <Box
-        sx={{
-          padding: "30px",
-          textAlign: "center",
-        }}
-      >
-        <Typography variant="h3" color={"black"} fontSize={"24px"}>
-          Pensamos en vos
-        </Typography>
-        <Divider
-          variant="middle"
+      <Box className="inicioBoxFlexbox">
+        <Box
           sx={{
-            bgcolor: "black",
-            margin: "5px auto",
-            width: "30%",
-            marginBottom: "25px",
+            padding: "30px",
+            textAlign: "center",
           }}
-        />
-        <Typography variant="body1" color={"black"} sx={{ margin: "5px 0" }}>
-          Coordinamos los turnos teniendo en cuenta tus necesidades y
-          preferencias, por eso solo tomamos reservas a través de Whatsapp.
-        </Typography>
-        <WhatsappButton text="Quiero reservar" />
+          className="horariosInicio"
+        >
+          <Typography variant="h3" color={"black"} fontSize={"24px"}>
+            Pensamos en vos
+          </Typography>
+          <Divider
+            variant="middle"
+            sx={{
+              bgcolor: "black",
+              margin: "5px auto",
+              width: "30%",
+              marginBottom: "25px",
+            }}
+          />
+          <Typography variant="body1" color={"black"} sx={{ margin: "5px 0" }}>
+            Coordinamos los turnos teniendo en cuenta tus necesidades y
+            preferencias, por eso solo tomamos reservas a través de Whatsapp.
+          </Typography>
+          <WhatsappButton text="Quiero reservar" />
+        </Box>
+        <Box className="horariosInicio">
+          <CardBlue>
+            <Typography variant="h3" color={"white"} fontSize={"20px"}>
+              Horarios
+            </Typography>
+            <Divider
+              light
+              variant="middle"
+              sx={{ bgcolor: "white", margin: "5px 0" }}
+            />
+            <Typography
+              variant="body1"
+              color={"white"}
+              sx={{ margin: "5px 0" }}
+            >
+              Martes a sábado de 15h a 20h.
+            </Typography>
+            <Typography
+              variant="body1"
+              color={"white"}
+              sx={{ margin: "5px 0" }}
+            >
+              Horarios de atención por Whatsapp: de 8h a 21h.
+            </Typography>
+          </CardBlue>
+        </Box>
       </Box>
 
       <Box
@@ -200,23 +234,6 @@ export const Inicio = () => {
         <WhatsappButton text="Quiero un voucher" />
       </Box>
 
-      <CardBlue>
-        <Typography variant="h3" color={"white"} fontSize={"20px"}>
-          Horarios
-        </Typography>
-        <Divider
-          light
-          variant="middle"
-          sx={{ bgcolor: "white", margin: "5px 0" }}
-        />
-        <Typography variant="body1" color={"white"} sx={{ margin: "5px 0" }}>
-          Martes a sábado de 15h a 20h.
-        </Typography>
-        <Typography variant="body1" color={"white"} sx={{ margin: "5px 0" }}>
-          Horarios de atención por Whatsapp: de 8h a 21h.
-        </Typography>
-      </CardBlue>
-
       <Box sx={{ width: "85vw", margin: "20px auto", padding: "8px 16px" }}>
         <Typography variant="h3" color={"black"} fontSize={"24px"}>
           A metros del mar
@@ -231,11 +248,8 @@ export const Inicio = () => {
           }}
         />
         <Typography variant="body1" color={"black"}>
-          Nos ubicas en el balneario El Cóndor, a metros de la playa. La
-          proximidad al mar nos permite fusionar naturalmente las actividades
-          que se realizan en nuestras instalaciones con los beneficios curativos
-          que brinda la presencia del óceano. Tras una vista al Mojón te
-          invitamos a culminar tu experiencia con un paseo por la playa.{" "}
+        Nos ubicas en el balneario El Cóndor, a metros de la playa. La proximidad al mar permite fusionar naturalmente las actividades que ofrecemos en nuestras instalaciones con los beneficios curativos que brinda la presencia del óceano.
+Tras una vista al Mojón te invitamos a culminar tu  experiencia con un paseo por la playa. . 
         </Typography>
       </Box>
       <Box sx={{ width: "85vw", margin: "20px auto", padding: "8px 16px" }}>
@@ -249,12 +263,11 @@ export const Inicio = () => {
         </Typography>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12034.32445461527!2d-62.8354208!3d-41.0562886!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95f68005016b6a3f%3A0xe5aaaa099869a74d!2sPileta%20Moj%C3%B3n%20del%20Faro!5e0!3m2!1ses-419!2sec!4v1695066329365!5m2!1ses-419!2sec"
-          style={{ border: 0, height: "40vh" }}
+          style={{ border: 0, height: "40vh", width: "85vw" }}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </Box>
-      <Footer />
-    </div>
+    </Box>
   );
 };

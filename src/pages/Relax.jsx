@@ -75,7 +75,6 @@ const Relax = () => {
         </Box>
         <CardNormas />
       </Box>
-      <Footer />
     </>
   );
 };

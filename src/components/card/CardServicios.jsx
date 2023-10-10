@@ -6,6 +6,7 @@ const CardServicios = ({image, text}) => {
     <Box sx={{
         backgroundImage:`url(${image})`,
         width:"30vw",
+        maxWidth:"150px",
         height:"15vh",
         display:"flex",
         flexDirection:"column",
