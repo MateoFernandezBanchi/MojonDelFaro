@@ -1,51 +1,59 @@
-import React from 'react'
-import CardBlue from './CardBlue'
-import { List, ListItem, Typography } from '@mui/material'
-import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import React from "react";
+import CardBlue from "./CardBlue";
+import { List, ListItem, Typography } from "@mui/material";
+import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
+import "./styles.css";
 
 const CardNormas = () => {
   return (
     <div>
-         <CardBlue>
+      <CardBlue>
         <Typography variant="h3" color={"white"} fontSize={"20px"}>
-          <VolunteerActivismIcon sx={{margin:"0 20px"}}/>
+          <VolunteerActivismIcon sx={{ margin: "0 20px" }} />
           Normas para disfrutar de nuestras instalaciones
         </Typography>
-        <List sx={{listStyle:"circle", color:"white"}}>
+        <List sx={{ listStyle: "circle", color: "white" }}>
           <ListItem>
-            Limpieza y Frescura: Antes de ingresar, asegurate de tener el cuerpo
-            limpio y sin cremas ni maquillaje para mantener la pileta en
-            condiciones óptimas.
+            <Typography>
+              <span style={{ fontWeight: "bold" }}>Limpieza: </span>Mantén tu
+              cuerpo limpio y sin cremas ni maquillaje antes de ingresar.
+            </Typography>
           </ListItem>
           <ListItem>
-            Gorro de Natación: Te recomendamos usar un gorro de natación. Si
-            tenés el tuyo, genial. Si no, no te preocupes, tenemos disponibles
-            en el establecimiento para tu comodidad.
+            <Typography>
+              <span style={{ fontWeight: "bold" }}>Gorro de natación: </span>
+              Debes usar gorro; tenemos disponibles si no lo tienes.
+            </Typography>
           </ListItem>
           <ListItem>
-            Calzado Adecuado: Es importante usar calzado de goma antideslizante,
-            evitando traer polvo o arena para mantener el área de la pileta
-            limpia y segura.
+            <Typography>
+              <span style={{ fontWeight: "bold" }}>Calzado adecuado: </span>{" "}
+              Utiliza calzado de goma antideslizante y evitar traer polvo o
+              arena.
+            </Typography>
           </ListItem>
           <ListItem>
-            Duchas Rápidas: Las duchas en el vestuario están pensadas para un
-            enjuague rápido. Por favor, procura no extender tu ducha más allá de
-            5 minutos, así todos pueden disfrutar de agua caliente.
+            <Typography>
+              <span style={{ fontWeight: "bold" }}>Duchas rápidas: </span>Usa las
+              duchas en el vestuario solo para enjuagues breves.
+            </Typography>
           </ListItem>
           <ListItem>
-            Atuendo de Natación: Para ingresar a la pileta, asegurate de usar
-            una malla de lycra que se ajuste al cuerpo y esté limpia. Esto
-            garantiza un ambiente cómodo y saludable para todos.
+            <Typography>
+              <span style={{ fontWeight: "bold" }}>Ropa de natación: </span>Debes
+              llevar una malla de lycra ajustada y limpia para ingresar a la
+              piscina.
+            </Typography>
           </ListItem>
         </List>
         <Typography color={"white"}>
-          Estas normas buscan crear un espacio agradable y seguro. ¡Esperamos
-          que disfrutes de nuestros servicios! Si tienes alguna pregunta, no
-          dudes en preguntarnos.
+          Estas normas esta crear un espacio agradable y seguro. ¡Esperamos que
+          disfrutes de nuestros servicios! Si tienes alguna pregunta, no dudes
+          en preguntarnos.
         </Typography>
       </CardBlue>
     </div>
-  )
-}
+  );
+};
 
-export default CardNormas
+export default CardNormas;
