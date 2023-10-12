@@ -12,7 +12,7 @@ const CardNormas = () => {
           <VolunteerActivismIcon sx={{ margin: "0 20px" }} />
           Normas para disfrutar de nuestras instalaciones
         </Typography>
-        <List sx={{ listStyle: "circle", color: "white" }}>
+        <List sx={{ listStyle: "circle", color: "white" }} className="listNormas">
           <ListItem>
             <Typography>
               <span style={{ fontWeight: "bold" }}>Limpieza: </span>Mantén tu
