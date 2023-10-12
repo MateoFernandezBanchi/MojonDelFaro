@@ -2,7 +2,6 @@ import { styled } from "@mui/material";
 
 
 const MobileDiv = styled("div")(({ theme }) => ({
-    padding: theme.spacing(1),
     [theme.breakpoints.down("sm")]: {
       display: "block",
     },
@@ -12,7 +11,6 @@ const MobileDiv = styled("div")(({ theme }) => ({
   }));
 
   const DesktopDiv = styled("div")(({ theme }) => ({
-    padding: theme.spacing(1),
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },

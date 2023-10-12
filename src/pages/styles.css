@@ -1,0 +1,23 @@
+.giftCardContainer {
+    display:flex;
+    width:90vw;
+    margin:5vh auto;
+    flex-direction: column;
+}
+
+@media screen and (min-width:1024px) {
+    .giftCardContainer {
+        height: 40vh;
+        flex-direction: row;
+    }
+    .giftTextContainer {
+        width:43%;
+    }
+    .giftImageContainer {
+        width: 70%;
+    }
+    .giftParrafo {
+        max-width: 30vw;
+        margin:4vh 0;
+    }
+}

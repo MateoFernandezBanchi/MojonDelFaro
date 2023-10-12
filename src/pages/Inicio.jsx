@@ -213,6 +213,7 @@ export const Inicio = () => {
           backgroundPositionX: "right",
           padding: "30px",
         }}
+        className="regalaContainer"
       >
         <Typography variant="h3" color={"white"} fontSize={"20px"}>
           Regala una experiencia
@@ -227,7 +228,7 @@ export const Inicio = () => {
             marginBottom: "25px",
           }}
         />
-        <Typography variant="body1" color={"white"} sx={{ margin: "5px 0" }}>
+        <Typography variant="body1" color={"white"} sx={{ margin: "15px 0" }} className="regalaParrafo">
           Ofrecé relajación y serenidad con un voucher de acceso al hidromasaje
           y sauna, brindando un momento de calma y reconexión.
         </Typography>
