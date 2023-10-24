@@ -41,8 +41,9 @@ export default function CardAcordeon({
 
   return (
     <Box
+    className="cardAcordeonContainer"
       sx={{
-        width: "100vw",
+        width: "100%",
         display: "flex",
       }}
     >

@@ -11,8 +11,8 @@ import React from "react";
 const Conocenos = () => {
   return (
     <>
-      <Box sx={{ margin: "15vh auto 5vh auto", width:"90vw"}}>
-        <Box sx={{ width: "80vw", margin: "0 auto" }}>
+      <Box className="conocenosContainer" sx={{ margin: "15vh auto 5vh auto", width:"90vw"}}>
+        <Box sx={{  margin: "0 15px" }}>
           <Typography variant="h1" fontSize="20px" fontWeight={500}>
             Sobre el proyecto
           </Typography>

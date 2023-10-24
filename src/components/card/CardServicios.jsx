@@ -1,13 +1,17 @@
-import { Box, Typography } from '@mui/material'
-import React from 'react'
+import { Box, Typography } from '@mui/material';
+import React from 'react';
+import "./styles.css";
 
 const CardServicios = ({image, text}) => {
   return (
-    <Box sx={{
+    <Box 
+    className="cardServicios"
+    sx={{
         backgroundImage:`url(${image})`,
+        backgroundSize:"cover",
         width:"35vw",
-        maxWidth:"150px",
-        height:"17vh",
+        maxWidth:"250px",
+        height:"18vh",
         display:"flex",
         flexDirection:"column",
         justifyContent:"end",

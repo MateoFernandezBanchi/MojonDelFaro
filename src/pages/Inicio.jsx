@@ -13,7 +13,8 @@ import { WhatsappButton } from "../components/button/WhatsappButton";
 import Banner from "../../public/assets/ExperienciaBanner.png";
 import CardServicios from "../components/card/CardServicios";
 import { Link } from "react-router-dom";
-import { DesktopDiv, MobileDiv } from "../components/MediaQuery/ResponsiveDiv";
+import { MobileDiv } from "../components/MediaQuery/ResponsiveDiv";
+import "./styles.css"
 
 export const Inicio = () => {
   return (
@@ -127,16 +128,18 @@ export const Inicio = () => {
           />
         </Box>
         <Box
+          className="serviciosCardsContainer"
           sx={{
             display: "flex",
             // justifyContent: "center",
-            gap: "20px",
+            gap: "15px",
             margin: "20px auto",
             marginLeft:"50px",
             width: "90vw",
             overflowX:"scroll",
             position:"relative",
-            left:"-30px"
+            left:"-30px",
+            // justifyContent:"center"
           }}
         >
 
@@ -165,8 +168,9 @@ export const Inicio = () => {
       <Box className="inicioBoxFlexbox">
         <Box
           sx={{
-            padding: "30px",
+            padding: "0 30px",
             textAlign: "center",
+            marginTop:"5vh"
           }}
           className="horariosInicio"
         >
@@ -186,9 +190,9 @@ export const Inicio = () => {
             Coordinamos los turnos teniendo en cuenta tus necesidades y
             preferencias, por eso solo tomamos reservas a través de Whatsapp.
           </Typography>
-        </Box>
-        <Box sx={{display:"flex", justifyContent:"center", marginBottom:"5vh"}}>
+        <Box sx={{display:"flex", justifyContent:"center", margin:"5vh auto"}}>
           <WhatsappButton  text="Quiero reservar" />
+        </Box>
         </Box>
         <Box className="horariosInicio">
           <CardBlue>
@@ -225,6 +229,7 @@ export const Inicio = () => {
           backgroundSize: "cover",
           backgroundPositionX: "right",
           padding: "30px",
+          width:"100vw"
         }}
         className="regalaContainer"
       >

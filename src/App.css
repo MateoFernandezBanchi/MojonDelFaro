@@ -7,6 +7,7 @@
   padding: 2rem;
   text-align: center; */
 }
+
 body {
   background-color: #fff;
   display: block;
@@ -105,10 +106,14 @@ header {
   margin: 5px 0;
 }
 @media screen and (min-width:1024px) {
+  header {
+    height:15vh;
+  }
   .listaInicio {
     background-image: url("/public/assets/piletaDesktop.png");
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 20vh !important;
   }
   .listaInicio li {
     width:40vw
@@ -120,10 +125,7 @@ header {
   .horariosInicio {
     width:30vw;
   }
-  /* Footer */
-  .footerList li a{
-    color:rgba(92, 92, 92, 1)
-  }
+
   .regalaParrafo {
     width: 30%;
     margin: 20px 0;

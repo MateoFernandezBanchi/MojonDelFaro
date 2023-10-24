@@ -42,5 +42,12 @@
 .cardBlue {
     width:50%;
 }
-
+.cardServicios {
+  height:25vh !important;
+}
+.cardAcordeonContainer {
+  margin:5vh 0;
+  margin-left: 30px;
+  
+}
 }

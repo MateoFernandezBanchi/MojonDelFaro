@@ -14,10 +14,33 @@
         width:43%;
     }
     .giftImageContainer {
-        width: 70%;
+        width: 70% !important;
+        height: 40vh !important;
+        margin: 0 auto !important;
     }
     .giftParrafo {
         max-width: 30vw;
         margin:4vh 0;
+    }
+    .serviciosCardsContainer {
+        overflow-x: auto !important;
+        justify-content: center;
+    }
+    .inicioBoxFlexbox {
+        align-items: center;
+    }
+
+    .conocenosContainer ul {
+        width: 50vw;
+    }
+    .listaInicio {
+        margin-left: 100px !important;
+    }
+    .horariosInicio {
+        margin:10vh auto;
+    }
+    .regalaContainer {
+        width:100% !important;
+        margin-left: 1.5vw !important;
     }
 }

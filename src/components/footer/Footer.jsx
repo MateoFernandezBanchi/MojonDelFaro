@@ -3,17 +3,18 @@ import React from "react";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import "./styles.css"
 
 const Footer = () => {
   return (
     <Box
       className="footerContainer"
       sx={{
-        width:"100%",
+        width:"100vw",
         boxSizing:"border-box",
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-around",
+        justifyContent: "space-between",
         flexDirection: {
           xs: "row",
           sm: "row",

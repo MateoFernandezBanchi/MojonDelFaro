@@ -1,0 +1,12 @@
+@media screen and (min-width:1024px) {
+  /* Footer */
+  .footerList li a{
+    color:rgba(92, 92, 92, 1)
+  }
+  .footerContainer {
+    justify-content: space-between;
+    padding:25px ;
+    box-sizing: border-box;
+    width: 90% !important;
+  }
+}

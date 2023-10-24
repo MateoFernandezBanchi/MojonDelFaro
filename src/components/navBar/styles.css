@@ -10,7 +10,7 @@ ul li a:hover {
 
 @media screen and (min-width:1024px) {
     .logoNavbar {
-        width:80px;
-        height:80px;
+        width:60px;
+        height:60px;
     }
 }
