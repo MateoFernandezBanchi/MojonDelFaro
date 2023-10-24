@@ -5,12 +5,14 @@ const CardServicios = ({image, text}) => {
   return (
     <Box sx={{
         backgroundImage:`url(${image})`,
-        width:"30vw",
+        width:"35vw",
         maxWidth:"150px",
-        height:"15vh",
+        height:"17vh",
         display:"flex",
         flexDirection:"column",
-        justifyContent:"end"
+        justifyContent:"end",
+        borderTopLeftRadius:"20px",
+        borderTopRightRadius:"20px",
     }}>
         <Box sx={{
         backgroundColor:"rgba(97, 179, 238, 1)",

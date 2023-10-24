@@ -17,7 +17,7 @@ import { DesktopDiv, MobileDiv } from "../components/MediaQuery/ResponsiveDiv";
 
 export const Inicio = () => {
   return (
-    <Box sx={{ boxSizing: "border-box", marginTop: "12vh" }}>
+    <Box sx={{ boxSizing: "border-box", marginTop: "10vh" }}>
       <MobileDiv>
         <Box
           component="img"
@@ -28,7 +28,7 @@ export const Inicio = () => {
             maxWidth: { xs: "100vw", md: 250 },
           }}
           alt="Imagen agua pileta"
-          src="/assets/pileta1.png"
+          src="/assets/PiletaMobile.png"
         />
       </MobileDiv>
       <List
@@ -44,7 +44,7 @@ export const Inicio = () => {
               gap: "20px",
             }}
           >
-            <Avatar src="/assets/Icon1.png"></Avatar>
+            <Box component="img" src="/assets/PiletaClimatizada.svg" sx={{width:"40px", height:"50px"}}></Box>
             <h2>Pileta climatizada</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
@@ -61,7 +61,7 @@ export const Inicio = () => {
               gap: "20px",
             }}
           >
-            <Avatar src="/assets/Icon2.png"></Avatar>
+            <Box component="img" src="/assets/SaunaSeco.svg" sx={{width:"40px", height:"50px"}}></Box>
             <h2>Sauna seco</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
@@ -80,7 +80,7 @@ export const Inicio = () => {
               gap: "20px",
             }}
           >
-            <Avatar src="/assets/Icon4.png"></Avatar>
+            <Box component="img" src="/assets/ClasesLogo.svg" sx={{width:"40px", height:"50px"}}></Box>
             <h2>Clases</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
@@ -100,7 +100,7 @@ export const Inicio = () => {
               gap: "20px",
             }}
           >
-            <Avatar src="/assets/Icon3.png"></Avatar>
+            <Box component="img" src="/assets/PH.svg" sx={{width:"40px", height:"40px"}}></Box>
             <h2>Ph equilibrado</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
@@ -126,16 +126,20 @@ export const Inicio = () => {
             }}
           />
         </Box>
-
         <Box
           sx={{
             display: "flex",
-            justifyContent: "center",
-            gap: "10px",
-            margin: "20px 5px",
-            width: "95vw",
+            // justifyContent: "center",
+            gap: "20px",
+            margin: "20px auto",
+            marginLeft:"50px",
+            width: "90vw",
+            overflowX:"scroll",
+            position:"relative",
+            left:"-30px"
           }}
         >
+
           <Link to="/piletalibre">
             <CardServicios
               image={"/assets/PiletaLibre.png"}
@@ -148,7 +152,14 @@ export const Inicio = () => {
           <Link to="/relax">
             <CardServicios image={"/assets/Relax.png"} text={"Relax"} />
           </Link>
-        </Box>
+          <Link to="/relax">
+            <CardServicios image={"/assets/Relax.png"} text={"Relax"} />
+          </Link>
+          <Link to="/relax">
+            <CardServicios image={"/assets/Relax.png"} text={"Relax"} />
+          </Link>
+        
+          </Box>
       </Box>
 
       <Box className="inicioBoxFlexbox">
@@ -175,7 +186,9 @@ export const Inicio = () => {
             Coordinamos los turnos teniendo en cuenta tus necesidades y
             preferencias, por eso solo tomamos reservas a través de Whatsapp.
           </Typography>
-          <WhatsappButton text="Quiero reservar" />
+        </Box>
+        <Box sx={{display:"flex", justifyContent:"center", marginBottom:"5vh"}}>
+          <WhatsappButton  text="Quiero reservar" />
         </Box>
         <Box className="horariosInicio">
           <CardBlue>
@@ -253,18 +266,18 @@ export const Inicio = () => {
 Tras una vista al Mojón te invitamos a culminar tu  experiencia con un paseo por la playa. . 
         </Typography>
       </Box>
-      <Box sx={{ width: "85vw", margin: "20px auto", padding: "8px 16px" }}>
+      <Box sx={{ width: "90vw", margin: "20px auto", padding: "8px 16px" }}>
         <Typography
           variant="h3"
           color={"black"}
           fontSize={"24px"}
           sx={{ marginBottom: "20px" }}
         >
-          ¿Como llegar?
+          ¿Como llegar al Mojón?
         </Typography>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12034.32445461527!2d-62.8354208!3d-41.0562886!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95f68005016b6a3f%3A0xe5aaaa099869a74d!2sPileta%20Moj%C3%B3n%20del%20Faro!5e0!3m2!1ses-419!2sec!4v1695066329365!5m2!1ses-419!2sec"
-          style={{ border: 0, height: "40vh", width: "85vw" }}
+          style={{ border: 0, height: "40vh", width: "100%" }}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
