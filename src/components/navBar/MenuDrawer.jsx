@@ -49,7 +49,7 @@ export const MenuDrawer = () => {
         </ListItem>
         <Divider sx={{ bgColor: "blue" }}></Divider>
         <ListItem sx={{ padding: "12px 16px", display:"block" }}>
-          <Link to="/">
+          <Link to="/relax#giftCard">
             <Box
               sx={{
                 display: "flex",

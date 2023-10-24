@@ -9,6 +9,8 @@ const Footer = () => {
     <Box
       className="footerContainer"
       sx={{
+        width:"100%",
+        boxSizing:"border-box",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-around",
@@ -35,7 +37,7 @@ const Footer = () => {
           height: "15vh",
         }}
         alt="Logo Mojo del Faro"
-        src="/assets/LogoFooter.png"
+        src="/assets/LogoPrincipal.svg"
       />
       <List className="footerList">
         <ListItem>

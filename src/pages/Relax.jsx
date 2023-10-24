@@ -1,14 +1,16 @@
-import { Box, Typography } from "@mui/material";
+import { Avatar, Box, Typography } from "@mui/material";
 import React from "react";
 import CardAcordeon from "../components/card/CardAcordeon";
 import { GreenButton } from "../components/button/WhatsappButton";
 import CardNormas from "../components/card/CardNormas";
 import ScrollToTop from "../helpers/ScrollToTop";
-import './styles.css';
+import "./styles.css";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
+import { useLocation } from "react-router-dom";
 
 const Relax = () => {
   ScrollToTop();
+
   return (
     <>
       <Box sx={{ margin: "15vh auto" }}>
@@ -32,22 +34,35 @@ const Relax = () => {
             "Potenciá la experiencia del sauna combinandola con nuestra pileta. En ella vas a encontrar  hidromasajes  y espacio para nadar. Esta combinación no solo contribuye a mejorar la postura y liberar tensiones profundas, sino que también disuelve esas antiguas contracturas. Sumergirse en este entorno acuático brinda una tranquilidad profunda a nivel mental y emocional. Tu bienestar integral es nuestra prioridad, y esta combinación de elementos está diseñada para ofrecerte un rejuvenecimiento completo."
           }
         />
-        <Box className="giftCardContainer">
+        <Box className="giftCardContainer" id="giftCard">
           <Box className="giftTextContainer">
-            <Box sx={{display:"flex", alignItems:"center", gap:"5px"}}>
-            <Typography variant="h3" fontSize={"24px"}> Gift Card </Typography>
-            <CardGiftcardIcon sx={{ color: "rgba(198, 166, 100, 1)", fontSize:"35px" }} />
+            <Box sx={{marginLeft:"10px"}}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: "5px"}}>
+              <Typography variant="h3" fontSize={"24px"}>
+                Gift Card
+              </Typography>
+              <CardGiftcardIcon
+                sx={{ color: "rgba(198, 166, 100, 1)", fontSize: "35px" }}
+              />
             </Box>
-            <Typography className="giftParrafo">
-              Podés reservar una sesión de hidromasaje y sauna
-              como regalo.
-              Cada turno tiene una duración de 1:30hs.
-              Simplemente contactanos para realizar la reserva,
-              nosotros nos encargaremos de coordinar el horario
-              y de brindar a esa persona especial la calma y relajación
+            <Typography className="giftParrafo" sx={{margin:"5vh 0 0 0", width:"80vw"}}>
+              Podés reservar una sesión de hidromasaje y sauna como regalo. Cada
+              turno tiene una duración de 1:30hs. 
+            </Typography>
+            <Typography className="giftParrafo" sx={{margin:"0 0 5vh 0", width:"80vw"}}>
+            Simplemente contactanos para
+              realizar la reserva, nosotros nos encargaremos de coordinar el
+              horario y de brindar a esa persona especial la calma y relajación
               que se merece.
             </Typography>
-            <GreenButton text="Regalá"/>
+            </Box>
+            <GreenButton>
+              <Avatar
+                src="/assets/reactIcon.svg"
+                sx={{ width: "30px", height: "30px", padding: "5px" }}
+              />
+              Quiero un voucher
+            </GreenButton>
           </Box>
           <Box
             sx={{
@@ -55,12 +70,21 @@ const Relax = () => {
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               padding: "15px",
+              margin:"5vh auto",
+              width:"100%",
+              height:"20vh",
+              display:"flex",
+              flexDirection:"column",
+              alignItems:"center",
+              justifyContent:"center",
+              gap:"20px"
             }}
             className="giftImageContainer"
           >
             <Typography variant="h3" color={"white"} fontSize={"16px"}>
               Regala una experiencia
             </Typography>
+            <Box  component="img" src="/assets/LogoBlanco.svg" className="logoNavbar"></Box>
           </Box>
         </Box>
         <CardNormas />

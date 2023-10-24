@@ -49,7 +49,7 @@ export default function CardAcordeon({
       <Card
         sx={{
           margin: "0 auto",
-          width: "80vw",
+          width: "90vw",
           display: "flex",
           justifyContent:"center",
           flexDirection: {

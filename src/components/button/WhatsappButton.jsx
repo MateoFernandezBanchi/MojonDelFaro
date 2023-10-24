@@ -18,7 +18,7 @@ const WhatsappButton = ({ text }) => {
   );
 };
 
-const GreenButton = ({ text }) => {
+const GreenButton = ({ children }) => {
   return (
     <Button
       sx={{
@@ -29,7 +29,7 @@ const GreenButton = ({ text }) => {
         margin:"0 5px"
       }}
     >
-      <Typography fontSize="14px" color="white">{text}</Typography>
+      <Typography fontSize="14px" color="white" sx={{display:"flex", alignItems:"center", gap:"5px"}}>{children}</Typography>
     </Button>
   );
 };

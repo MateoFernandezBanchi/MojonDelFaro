@@ -3,3 +3,14 @@ ul li a {
 ul li a:hover {
     font-size:28px;
 }
+.logoNavbar {
+    width: 50px;
+    height:50px;
+}
+
+@media screen and (min-width:1024px) {
+    .logoNavbar {
+        width:80px;
+        height:80px;
+    }
+}
