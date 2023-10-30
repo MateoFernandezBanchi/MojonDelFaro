@@ -95,7 +95,7 @@ const PiletaLibre = () => {
             </Typography>
           </Box>
         </Box>
-        <Box component="img" src="/assets/Clases2.png"></Box>
+        <Box component="img" src="/assets/Clases2.png" sx={{maxWidth:"100vw"}}></Box>
       </Box>
       <CardNormas />
     </>
