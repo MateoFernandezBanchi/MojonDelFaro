@@ -5,7 +5,7 @@ import {
   GreenButton,
   WhatsappButton,
 } from "../components/button/WhatsappButton";
-import Banner from "../../public/assets/Sauna-2.jpg";
+import Banner from "../../public/assets/sauna-2.jpg";
 import CardServicios from "../components/card/CardServicios";
 import { Link } from "react-router-dom";
 import { MobileDiv } from "../components/MediaQuery/ResponsiveDiv";
