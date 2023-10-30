@@ -13,8 +13,8 @@ const CardBlue = ({ children }) => {
           xs: "88%",
           sm: "88%",
           md: "70%",
-          lg: "30vw",
-          xl: "30vw",
+          lg: "60%",
+          xl: "60%",
         
         },
         margin: "20px auto",

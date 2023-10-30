@@ -1,8 +1,15 @@
 .giftCardContainer {
     display:flex;
-    width:90vw;
+    width:90%;
     margin:5vh auto;
     flex-direction: column;
+    justify-content: center;
+}
+span {
+    font-weight: bold;
+}
+.whatsappText {
+    color:rgba(56, 161, 105, 1);
 }
 
 @media screen and (min-width:1024px) {
@@ -29,18 +36,25 @@
     .inicioBoxFlexbox {
         align-items: center;
     }
-
+    .conocenosContainer {
+        margin-top: 20vh !important;
+        margin-left: 1.5rem !important;
+    }
     .conocenosContainer ul {
         width: 50vw;
+
     }
     .listaInicio {
         margin-left: 100px !important;
     }
+
     .horariosInicio {
         margin:10vh auto;
     }
     .regalaContainer {
-        width:100% !important;
+        width:85vw !important;
         margin-left: 1.5vw !important;
+        background-position : 0  calc(100% + 600px) !important;
+        margin: 0 auto !important;
     }
 }

@@ -38,7 +38,7 @@ export default function Navbar() {
     <>
       <header>
         <Link to="/">        
-        <Box  component="img" src="/assets/LogoPrincipal.svg" className="logoNavbar"></Box>
+        <Box  component="img" src="/assets/LogoBlanco.svg" className="logoNavbar"></Box>
         </Link>
         <MobileDiv>
           <Button onClick={toggleDrawer(true)}>

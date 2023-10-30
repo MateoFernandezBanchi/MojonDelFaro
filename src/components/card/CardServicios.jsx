@@ -11,7 +11,7 @@ const CardServicios = ({image, text}) => {
         backgroundSize:"cover",
         width:"35vw",
         maxWidth:"250px",
-        height:"18vh",
+        height:"22vh",
         display:"flex",
         flexDirection:"column",
         justifyContent:"end",

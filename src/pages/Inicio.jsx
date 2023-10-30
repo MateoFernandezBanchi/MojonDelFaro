@@ -1,36 +1,40 @@
-import {
-  Avatar,
-  Box,
-  Divider,
-  List,
-  ListItem,
-  Typography,
-} from "@mui/material";
+import { Box, Divider, List, ListItem, Typography } from "@mui/material";
 import React from "react";
-import Footer from "../components/footer/Footer";
 import CardBlue from "../components/card/CardBlue";
-import { WhatsappButton } from "../components/button/WhatsappButton";
-import Banner from "../../public/assets/ExperienciaBanner.png";
+import {
+  GreenButton,
+  WhatsappButton,
+} from "../components/button/WhatsappButton";
+import Banner from "../../public/assets/Sauna-2.jpg";
 import CardServicios from "../components/card/CardServicios";
 import { Link } from "react-router-dom";
 import { MobileDiv } from "../components/MediaQuery/ResponsiveDiv";
-import "./styles.css"
+import "./styles.css";
 
 export const Inicio = () => {
   return (
     <Box sx={{ boxSizing: "border-box", marginTop: "10vh" }}>
       <MobileDiv>
         <Box
-          component="img"
           sx={{
-            height: 233,
+            height: "100px",
             width: "100vw",
             maxHeight: { xs: 233, md: 167 },
             maxWidth: { xs: "100vw", md: 250 },
+            backgroundImage: "url(/assets/PiletaMobile.png)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
-          alt="Imagen agua pileta"
-          src="/assets/PiletaMobile.png"
-        />
+        >
+          <Box
+            component="img"
+            src="/assets/LogoHorizontalBlanco.png"
+            sx={{
+              width: "60vw",
+            }}
+          />
+        </Box>
       </MobileDiv>
       <List
         sx={{ width: "90vw", margin: "0 auto 6vh auto" }}
@@ -45,12 +49,16 @@ export const Inicio = () => {
               gap: "20px",
             }}
           >
-            <Box component="img" src="/assets/PiletaClimatizada.svg" sx={{width:"40px", height:"50px"}}></Box>
+            <Box
+              component="img"
+              src="/assets/PiletaClimatizada.svg"
+              sx={{ width: "40px", height: "50px" }}
+            ></Box>
             <h2>Pileta climatizada</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
-            Disfrutá con tranquilidad: agua siempre templada y ambiente cálido y
-            reconfortante.
+            Disfrutá con tranquilidad: agua siempre templada y{" "}
+            <span>ambiente cálido y reconformante.</span>
           </Typography>
         </ListItem>
         <ListItem sx={{ flexDirection: "column" }}>
@@ -62,14 +70,17 @@ export const Inicio = () => {
               gap: "20px",
             }}
           >
-            <Box component="img" src="/assets/SaunaSeco.svg" sx={{width:"40px", height:"50px"}}></Box>
+            <Box
+              component="img"
+              src="/assets/SaunaSeco.svg"
+              sx={{ width: "40px", height: "50px" }}
+            ></Box>
             <h2>Sauna seco</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
-            Un espacio de calma y revitalización para liberar tensiones,
-            mejorando la circulación y purificando toxinas gracias a la acción
-            del calor y el efecto de las esencias naturales. Desconectá del
-            ritmo cotidiano y viví un momento de serenidad física y mental.
+            Un espacio de calma y revitalización.{" "}
+            <span>Desconectá del ritmo cotidiano </span>y viví un momento de
+            serenidad física y mental.
           </Typography>
         </ListItem>
         <ListItem sx={{ flexDirection: "column" }}>
@@ -81,14 +92,19 @@ export const Inicio = () => {
               gap: "20px",
             }}
           >
-            <Box component="img" src="/assets/ClasesLogo.svg" sx={{width:"40px", height:"50px"}}></Box>
+            <Box
+              component="img"
+              src="/assets/ClasesLogo.svg"
+              sx={{ width: "40px", height: "50px" }}
+            ></Box>
             <h2>Clases</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
-            Encontrá la actividad que se adapta a tu edad, las necesidades de tu
-            cuerpo, tus objetivos y estilo de vida. Nuestros grupos son
-            reducidos y diseñados para cada etapa, asegurandote una experiencia
-            personalizada.
+            Encontrá una actividad{" "}
+            <span para vos>
+              adaptada para vos
+            </span>
+            . Nuestros grupos son reducidos y diseñados para cada etapa.
           </Typography>
         </ListItem>
 
@@ -101,13 +117,17 @@ export const Inicio = () => {
               gap: "20px",
             }}
           >
-            <Box component="img" src="/assets/PH.svg" sx={{width:"40px", height:"40px"}}></Box>
+            <Box
+              component="img"
+              src="/assets/PH.svg"
+              sx={{ width: "40px", height: "40px" }}
+            ></Box>
             <h2>Ph equilibrado</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
-            ¡Tu salud es lo más importante! Mantenemos el equilibrio del pH del
-            agua para minimizar el uso de cloro, garantizando el cuidado de tu
-            piel.
+            <span>¡Tu salud es lo más importante!</span> Mantenemos en
+            equilibrio pH de agua para minimizar el cloro, garantizando el
+            cuidado de tu piel.
           </Typography>
         </ListItem>
       </List>
@@ -134,15 +154,14 @@ export const Inicio = () => {
             // justifyContent: "center",
             gap: "15px",
             margin: "20px auto",
-            marginLeft:"50px",
+            marginLeft: "50px",
             width: "90vw",
-            overflowX:"scroll",
-            position:"relative",
-            left:"-30px",
+            overflowX: "scroll",
+            position: "relative",
+            left: "-30px",
             // justifyContent:"center"
           }}
         >
-
           <Link to="/piletalibre">
             <CardServicios
               image={"/assets/PiletaLibre.png"}
@@ -150,19 +169,18 @@ export const Inicio = () => {
             />
           </Link>
           <Link to="/clases">
-            <CardServicios image={"/assets/Clases.png"} text={"Clases"} />
+            <CardServicios image={"/assets/GimnasiaAcuaticaSmall.jpg"} text={"Gimnasia Acuática"} />
           </Link>
           <Link to="/relax">
-            <CardServicios image={"/assets/Relax.png"} text={"Relax"} />
+            <CardServicios image={"/assets/NatacionNiños.png"} text={"Natación Niños"} />
           </Link>
           <Link to="/relax">
-            <CardServicios image={"/assets/Relax.png"} text={"Relax"} />
+            <CardServicios image={"/assets/NatacionAdultos.png"} text={"Natación Adultos"} />
           </Link>
           <Link to="/relax">
-            <CardServicios image={"/assets/Relax.png"} text={"Relax"} />
+            <CardServicios image={"/assets/Relax.png"} text={"Hidromasaje y Sauna"} />
           </Link>
-        
-          </Box>
+        </Box>
       </Box>
 
       <Box className="inicioBoxFlexbox">
@@ -170,7 +188,7 @@ export const Inicio = () => {
           sx={{
             padding: "0 30px",
             textAlign: "center",
-            marginTop:"5vh"
+            marginTop: "5vh",
           }}
           className="horariosInicio"
         >
@@ -187,12 +205,20 @@ export const Inicio = () => {
             }}
           />
           <Typography variant="body1" color={"black"} sx={{ margin: "5px 0" }}>
-            Coordinamos los turnos teniendo en cuenta tus necesidades y
-            preferencias, por eso solo tomamos reservas a través de Whatsapp.
+            Coordinamos los <span>turnos</span> teniendo en cuenta tus{" "}
+            <span>necesidades y preferencias</span>, por eso{" "}
+            <span>solo tomamos reservas a través de</span>{" "}
+            <span className="whatsappText">Whatsapp.</span>
           </Typography>
-        <Box sx={{display:"flex", justifyContent:"center", margin:"5vh auto"}}>
-          <WhatsappButton  text="Quiero reservar" />
-        </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              margin: "5vh auto",
+            }}
+          >
+            <GreenButton>Hacé tu consulta</GreenButton>
+          </Box>
         </Box>
         <Box className="horariosInicio">
           <CardBlue>
@@ -229,7 +255,7 @@ export const Inicio = () => {
           backgroundSize: "cover",
           backgroundPositionX: "right",
           padding: "30px",
-          width:"100vw"
+          width: "100vw",
         }}
         className="regalaContainer"
       >
@@ -246,7 +272,12 @@ export const Inicio = () => {
             marginBottom: "25px",
           }}
         />
-        <Typography variant="body1" color={"white"} sx={{ margin: "15px 0" }} className="regalaParrafo">
+        <Typography
+          variant="body1"
+          color={"white"}
+          sx={{ margin: "15px 0" }}
+          className="regalaParrafo"
+        >
           Ofrecé relajación y serenidad con un voucher de acceso al hidromasaje
           y sauna, brindando un momento de calma y reconexión.
         </Typography>
@@ -267,8 +298,10 @@ export const Inicio = () => {
           }}
         />
         <Typography variant="body1" color={"black"}>
-        Nos ubicas en el balneario El Cóndor, a metros de la playa. La proximidad al mar permite fusionar naturalmente las actividades que ofrecemos en nuestras instalaciones con los beneficios curativos que brinda la presencia del óceano.
-Tras una vista al Mojón te invitamos a culminar tu  experiencia con un paseo por la playa. . 
+          Estamos ubicados en el balneario El Cóndor, a metros de la playa, una
+          cercanía que fusiona naturalmente las actividades que se realizan en
+          nuestras instalaciones con los beneficios curativos que nos regalá el
+          mar.
         </Typography>
       </Box>
       <Box sx={{ width: "90vw", margin: "20px auto", padding: "8px 16px" }}>

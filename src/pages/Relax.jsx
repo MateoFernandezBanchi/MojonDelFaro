@@ -13,7 +13,7 @@ const Relax = () => {
 
   return (
     <>
-      <Box sx={{ margin: "15vh auto" }}>
+      <Box sx={{ margin: "15vh 0", width:"100vw", overflow:"hidden" }}>
         <CardAcordeon
           imagen={"/assets/SaunaSeco.png"}
           titulo={"Sauna Seco"}
@@ -25,7 +25,7 @@ const Relax = () => {
           }
         />
         <CardAcordeon
-          imagen={"/assets/Pileta.png"}
+          imagen={"/assets/HidromasajeSauna.png"}
           titulo={"Hidromasaje y sauna"}
           subtitulo={"Sesión: 1.30h"}
           texto1={""}

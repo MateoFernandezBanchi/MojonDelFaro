@@ -1,7 +1,9 @@
 .listNormas li p {
   color:white;
 }
-
+span {
+  font-weight: bold;
+}
 @media screen and (min-width: 1024px) {
     .cardContent {
         width:80%;
@@ -23,7 +25,6 @@
   .cardMainContent div{
     display:flex;
     justify-content: space-between;
-    padding:3px 15px;
 
   }
   .cardFirstContent {

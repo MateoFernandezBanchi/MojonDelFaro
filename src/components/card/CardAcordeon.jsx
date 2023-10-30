@@ -31,7 +31,7 @@ export default function CardAcordeon({
   texto1,
   texto2,
   precio,
-  texto,
+  children,
 }) {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -71,6 +71,7 @@ export default function CardAcordeon({
           sx={{
             borderTopLeftRadius: "30px",
             borderTopRightRadius: "30px",
+            marginRight:"20px",
             width:{
               xs: "100%", // Estilo para pantallas extra pequeñas
               sm: "100%", // Estilo para pantallas pequeñas
@@ -92,7 +93,7 @@ export default function CardAcordeon({
           <Box sx={{ maxWidth: "70%" }} className="cardMainContent">
             <Box>
               <Box className="cardFirstContent">
-                <Typography className="cardTitle" variant="h2" sx={{ fontSize: "18px" }}>
+                <Typography className="cardTitle" variant="h2" sx={{ fontSize: "20px", fontWeight:"400", lineHeight:"20px" }}>
                   {titulo}
                 </Typography>
                 <Typography variant="h3" sx={{ fontSize: "14px" }}>
@@ -120,9 +121,9 @@ export default function CardAcordeon({
               width: "100%",
               marginBottom: "25px",
             }}/>
-              <Typography paragraph sx={{ fontSize: "16px" }}>
-                {texto}
-              </Typography>
+              <Box>
+                {children}
+              </Box>
               </Box>
             </DesktopDiv>
           </Box>
@@ -142,9 +143,9 @@ export default function CardAcordeon({
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent sx={{ width: "80vw" }}>
-              <Typography paragraph sx={{ fontSize: "14px" }}>
-                {texto}
-              </Typography>
+              <Box>
+                {children}
+              </Box>
             </CardContent>
           </Collapse>
         </MobileDiv>
