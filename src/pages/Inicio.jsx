@@ -10,8 +10,10 @@ import CardServicios from "../components/card/CardServicios";
 import { Link } from "react-router-dom";
 import { MobileDiv } from "../components/MediaQuery/ResponsiveDiv";
 import "./styles.css";
+import ScrollToTop from "../helpers/ScrollToTop";
 
 export const Inicio = () => {
+  ScrollToTop();
   return (
     <Box sx={{ boxSizing: "border-box", marginTop: "10vh" }}>
       <MobileDiv>
@@ -57,7 +59,7 @@ export const Inicio = () => {
             <h2>Pileta climatizada</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
-            Disfrutá con tranquilidad: agua siempre templada y{" "}
+            Disfrutá con tranquilidad: agua siempre templada y
             <span>ambiente cálido y reconformante.</span>
           </Typography>
         </ListItem>
@@ -101,7 +103,7 @@ export const Inicio = () => {
           </div>
           <Typography sx={{ width: "100%" }}>
             Encontrá una actividad{" "}
-            <span para vos>
+            <span>
               adaptada para vos
             </span>
             . Nuestros grupos son reducidos y diseñados para cada etapa.

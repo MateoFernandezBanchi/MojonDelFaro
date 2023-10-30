@@ -1,5 +1,5 @@
 import { Avatar, Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import CardAcordeon from "../components/card/CardAcordeon";
 import { GreenButton } from "../components/button/WhatsappButton";
 import CardNormas from "../components/card/CardNormas";
@@ -9,8 +9,25 @@ import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
 import { useLocation } from "react-router-dom";
 
 const Relax = () => {
-  ScrollToTop();
+  const giftCard = useRef();
+  const location = useLocation();
 
+  useEffect(() => {
+    if (location.hash === '') {
+      scrollToTopInner();
+    } else {
+      scrollToForm();
+    }
+  }, [location.hash]);
+
+  function scrollToForm() {
+    if (giftCard.current) {
+      giftCard.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  function scrollToTopInner () {
+    window.scrollTo(0, 0);
+  }
   return (
     <>
       <Box sx={{ margin: "15vh 0", width:"100vw", overflow:"hidden" }}>
@@ -34,7 +51,7 @@ const Relax = () => {
             "Potenciá la experiencia del sauna combinandola con nuestra pileta. En ella vas a encontrar  hidromasajes  y espacio para nadar. Esta combinación no solo contribuye a mejorar la postura y liberar tensiones profundas, sino que también disuelve esas antiguas contracturas. Sumergirse en este entorno acuático brinda una tranquilidad profunda a nivel mental y emocional. Tu bienestar integral es nuestra prioridad, y esta combinación de elementos está diseñada para ofrecerte un rejuvenecimiento completo."
           }
         />
-        <Box className="giftCardContainer" id="giftCard">
+        <Box className="giftCardContainer" id="giftCard" ref={giftCard}>
           <Box className="giftTextContainer">
             <Box sx={{marginLeft:"10px"}}>
             <Box sx={{ display: "flex", alignItems: "center", gap: "5px"}}>

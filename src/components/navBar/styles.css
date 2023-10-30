@@ -1,6 +1,11 @@
-ul li a {
-    font-size: 23px;}
+ul li a p{
+    font-size: 23px;
+    color:white;
+}
 ul li a:hover {
+    font-size:28px;
+}
+ul li a p:hover {
     font-size:28px;
 }
 .logoNavbar {

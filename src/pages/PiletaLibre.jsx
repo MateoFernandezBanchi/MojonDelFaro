@@ -4,14 +4,14 @@ import { Box, Divider, Typography } from "@mui/material";
 import CardNormas from "../components/card/CardNormas";
 import { useLocation } from "react-router-dom";
 import ScrollToTop from "../helpers/ScrollToTop";
-import Footer from "../components/footer/Footer";
+import "./styles.css";
 import { WhatsappButton } from "../components/button/WhatsappButton";
 
 const PiletaLibre = () => {
   ScrollToTop();
   return (
     <>
-      <Box sx={{ margin: "15vh auto" }}>
+      <Box sx={{ margin: "15vh auto" }} className="piletaLibreContainer">
         <CardAcordeon
           imagen={"/assets/NatacionAdultos.png"}
           titulo={"Entrena a tu ritmo"}
