@@ -21,6 +21,10 @@ const CardBlue = ({ children }) => {
         padding: "25px",
         boxSizing: "border-box",
         textAlign: "center",
+        minHeight:"20vh",
+        display:"flex",
+        flexDirection:"column",
+        justifyContent:"center"
       }}
       className="cardBlue"
     >

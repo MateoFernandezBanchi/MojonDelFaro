@@ -1,10 +1,11 @@
 import { Button, Typography } from "@mui/material";
 import React from "react";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-
+import "./styles.css"
 const WhatsappButton = ({ text }) => {
   return (
     <Button
+    className="greenButton"
       sx={{
         backgroundColor: "rgba(56, 161, 105, 1)",
         color: "white",
@@ -24,6 +25,7 @@ const WhatsappButton = ({ text }) => {
 const GreenButton = ({ children }) => {
   return (
     <Button
+    className="greenButton"
       sx={{
         backgroundColor: "rgba(56, 161, 105, 1)",
         color: "white",

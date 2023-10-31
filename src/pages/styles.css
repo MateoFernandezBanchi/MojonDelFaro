@@ -37,9 +37,12 @@ span {
     .serviciosCardsContainer {
         overflow-x: auto !important;
         justify-content: center;
+        width: 100% !important;
     }
     .inicioBoxFlexbox {
-        align-items: center;
+        align-items: flex-start;
+        margin:10vh auto;
+        width: 102%;
     }
     .conocenosContainer {
         margin-top: 20vh !important;
@@ -53,13 +56,13 @@ span {
         margin-left: 100px !important;
     }
 
-    .horariosInicio {
-        margin:10vh auto;
-    }
     .regalaContainer {
         width:85vw !important;
-        margin-left: 1.5vw !important;
-        background-position : 0  calc(100% + 600px) !important;
         margin: 0 auto !important;
+        background-position : 0  calc(100% + 600px) !important;
+    }
+    .horariosContainer {
+        width: 40vw;
+        align-self: flex-start;
     }
 }

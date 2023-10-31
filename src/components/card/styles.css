@@ -44,7 +44,12 @@ span {
     width:50%;
 }
 .cardServicios {
-  height:25vh !important;
+  height:35vh !important;
+}
+.cardServicios:hover {
+  height: 36vh !important;
+  width: 36vw !important;
+  box-shadow: 0px 18px 15px -3px rgba(0,0,0,0.8) !important;
 }
 .cardAcordeonContainer {
   margin:5vh 0;

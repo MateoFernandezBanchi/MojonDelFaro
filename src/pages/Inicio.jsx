@@ -1,4 +1,4 @@
-import { Box, Divider, List, ListItem, Typography } from "@mui/material";
+import { Avatar, Box, Divider, List, ListItem, Typography } from "@mui/material";
 import React from "react";
 import CardBlue from "../components/card/CardBlue";
 import {
@@ -135,7 +135,7 @@ export const Inicio = () => {
       </List>
 
       <Box>
-        <Box sx={{ width: "85vw", margin: "0 auto" }}>
+        <Box sx={{ width: "82vw", margin: "0 auto" }}>
           <Typography variant="h3" color={"black"} fontSize={"24px"}>
             Nuestros Servicios
           </Typography>
@@ -192,7 +192,7 @@ export const Inicio = () => {
             textAlign: "center",
             marginTop: "5vh",
           }}
-          className="horariosInicio"
+          className="horariosInicio pensamosContainer"
         >
           <Typography variant="h3" color={"black"} fontSize={"24px"}>
             Pensamos en vos
@@ -219,11 +219,40 @@ export const Inicio = () => {
               margin: "5vh auto",
             }}
           >
-            <GreenButton>Hacé tu consulta</GreenButton>
+              <GreenButton>
+              <Avatar
+                src="/assets/reactIcon.svg"
+                sx={{ width: "30px", height: "30px", padding: "5px" }}
+              />
+              Quiero un turno
+            </GreenButton>
           </Box>
         </Box>
-        <Box className="horariosInicio">
-          <CardBlue>
+        <Box className="horariosInicio horariosContainer">
+        <Box
+      sx={{
+        backgroundColor: "rgba(235, 143, 0, 1)",
+        borderRadius: "30px",
+        color: "white",
+        width: {
+          xs: "88%",
+          sm: "88%",
+          md: "70%",
+          lg: "60%",
+          xl: "60%",
+        
+        },
+        margin: "20px auto",
+        padding: "60px",
+        boxSizing: "border-box",
+        textAlign: "center",
+        minHeight:"20vh",
+        display:"flex",
+        flexDirection:"column",
+        justifyContent:"center"
+      }}
+      // className="cardBlue"
+    >
             <Typography variant="h3" color={"white"} fontSize={"20px"}>
               Horarios
             </Typography>
@@ -246,7 +275,7 @@ export const Inicio = () => {
             >
               Horarios de atención por Whatsapp: de 8h a 21h.
             </Typography>
-          </CardBlue>
+          </Box>
         </Box>
       </Box>
 
@@ -283,7 +312,13 @@ export const Inicio = () => {
           Ofrecé relajación y serenidad con un voucher de acceso al hidromasaje
           y sauna, brindando un momento de calma y reconexión.
         </Typography>
-        <WhatsappButton text="Quiero un voucher" />
+        <GreenButton>
+              <Avatar
+                src="/assets/reactIcon.svg"
+                sx={{ width: "30px", height: "30px", padding: "5px" }}
+              />
+              Quiero un voucher
+            </GreenButton>
       </Box>
 
       <Box sx={{ width: "85vw", margin: "20px auto", padding: "8px 16px" }}>
@@ -306,12 +341,9 @@ export const Inicio = () => {
           mar.
         </Typography>
       </Box>
-      <Box sx={{ width: "90vw", margin: "20px auto", padding: "8px 16px" }}>
+      <Box sx={{ width: "85vw", margin: "20px auto" }}>
         <Typography
-          variant="h3"
-          color={"black"}
-          fontSize={"24px"}
-          sx={{ marginBottom: "20px" }}
+          variant="h3" color={"black"} fontSize={"24px"} sx={{padding:"10px"}}
         >
           ¿Como llegar al Mojón?
         </Typography>
