@@ -12,8 +12,10 @@ import { MobileDiv } from "../components/MediaQuery/ResponsiveDiv";
 import "./styles.css";
 import ScrollToTop from "../helpers/ScrollToTop";
 
+
 export const Inicio = () => {
   ScrollToTop();
+
   return (
     <Box sx={{ boxSizing: "border-box", marginTop: "10vh" }}>
       <MobileDiv>
@@ -170,13 +172,13 @@ export const Inicio = () => {
               text={"Pileta libre"}
             />
           </Link>
-          <Link to="/clases">
+          <Link to="/clases#gimnasiaAcuatica">
             <CardServicios image={"/assets/GimnasiaAcuaticaSmall.jpg"} text={"Gimnasia Acuática"} />
           </Link>
-          <Link to="/relax">
+          <Link to="/clases#natacionNinos">
             <CardServicios image={"/assets/NatacionNiños.png"} text={"Natación Niños"} />
           </Link>
-          <Link to="/relax">
+          <Link to="/clases#natacionAdultos">
             <CardServicios image={"/assets/NatacionAdultos.png"} text={"Natación Adultos"} />
           </Link>
           <Link to="/relax">
@@ -219,11 +221,7 @@ export const Inicio = () => {
               margin: "5vh auto",
             }}
           >
-              <GreenButton>
-              <Avatar
-                src="/assets/reactIcon.svg"
-                sx={{ width: "30px", height: "30px", padding: "5px" }}
-              />
+              <GreenButton img="/assets/reactIcon.svg">
               Quiero un turno
             </GreenButton>
           </Box>
@@ -312,11 +310,7 @@ export const Inicio = () => {
           Ofrecé relajación y serenidad con un voucher de acceso al hidromasaje
           y sauna, brindando un momento de calma y reconexión.
         </Typography>
-        <GreenButton>
-              <Avatar
-                src="/assets/reactIcon.svg"
-                sx={{ width: "30px", height: "30px", padding: "5px" }}
-              />
+        <GreenButton img="/assets/reactIcon.svg">
               Quiero un voucher
             </GreenButton>
       </Box>

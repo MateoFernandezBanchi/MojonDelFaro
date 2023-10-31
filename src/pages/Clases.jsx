@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CardAcordeon from "../components/card/CardAcordeon";
-import Footer from "../components/footer/Footer";
 import { Box, Typography } from "@mui/material";
 import { WhatsappButton } from "../components/button/WhatsappButton";
 import CardNormas from "../components/card/CardNormas";
-import ScrollToTop from "../helpers/ScrollToTop";
+import { useLocation } from "react-router-dom";
 
 export const Clases = () => {
-  ScrollToTop();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '') {
+      scrollToTopInner();
+    } else {
+      scrollToForm();
+    }
+  }, [location.hash]);
+
+  function scrollToForm() {
+    const sectionId = location.hash.slice(1);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  function scrollToTopInner () {
+    window.scrollTo(0, 0);
+  }
   return (
     <>
       <Box
@@ -20,6 +38,7 @@ width:"98vw",
 overflow:"hidden"
         }}
       >
+        <Box  id="natacionAdultos"></Box>
         <CardAcordeon
           imagen={"/assets/NatacionAdultos.png"}
           titulo={"Natación Adultos"}
@@ -27,11 +46,13 @@ overflow:"hidden"
           texto1={"Martes y miércoles "}
           texto2={"17.30 a 18.30"}
           precio={"$6500"}
+          id="natacionAdultos"
         >
           <Typography>
           La natación es una forma relajante de hacer ejercicio para todo el cuerpo. Es una actividad que tonifica los músculos, protege las articulaciones, mejora la circulación, favorece el sistema cardiovascular, recompone la postura y reduce la presión arterial, al mismo tiempo que proporciona <span>calma mental, concentración y conexión con nuestro cuerpo.</span>
           </Typography>
         </CardAcordeon>
+        <Box  id="natacionNinos"></Box>
         <CardAcordeon
           imagen={"/assets/NatacionNiños.png"}
           titulo={"Natación Niños"}
@@ -47,6 +68,7 @@ overflow:"hidden"
           <Typography sx={{fontSize:"20px", fontWeight:"semi-bold"}}>Precio 2 veces por semana: $9500</Typography>
           </Box>
         </CardAcordeon>
+        <Box  id="gimnasiaAcuatica"></Box>
         <CardAcordeon
           imagen={"/assets/GimnasiaAcuatica.jpg"}
           titulo={"Gimnasia Acuática"}
@@ -54,6 +76,7 @@ overflow:"hidden"
           texto1={"Martes y miércoles"}
           texto2={"17.30 a 18.30hs"}
           precio={"$9000"}
+          id="gimnasiaAcuatica"
         >
           <Typography>
           Son ejercicios acuáticos que <span>tonifican los músculos</span> aprovechando la falta de gravedad en el agua, lo que los hace <span>ideales para personas que buscan actividad suave.</span> Mejoran la condición física al trabajar grupos musculares específicos y también <span>ayudan en la recuperación de lesiones.</span>

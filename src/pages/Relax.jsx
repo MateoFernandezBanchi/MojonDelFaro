@@ -1,9 +1,8 @@
-import { Avatar, Box, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React, { useEffect, useRef } from "react";
 import CardAcordeon from "../components/card/CardAcordeon";
 import { GreenButton } from "../components/button/WhatsappButton";
 import CardNormas from "../components/card/CardNormas";
-import ScrollToTop from "../helpers/ScrollToTop";
 import "./styles.css";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
 import { useLocation } from "react-router-dom";
@@ -75,11 +74,7 @@ const Relax = () => {
               que se merece.
             </Typography>
             </Box>
-            <GreenButton>
-              <Avatar
-                src="/assets/reactIcon.svg"
-                sx={{ width: "30px", height: "30px", padding: "5px" }}
-              />
+            <GreenButton img="/assets/reactIcon.svg">
               Quiero un voucher
             </GreenButton>
           </Box>
