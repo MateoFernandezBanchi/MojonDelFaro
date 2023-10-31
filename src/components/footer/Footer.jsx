@@ -38,12 +38,13 @@ const Footer = () => {
           height: "15vh",
         }}
         alt="Logo Mojo del Faro"
-        src="/assets/LogoPrincipal.svg"
+        src="/assets/Logo2.png"
+        className="logoFooter"
       />
       <List className="footerList">
         <ListItem>
           <a target="_blank" href="https://wa.me/+542920222444">
-            <WhatsAppIcon fontSize="large" /> (2920) 222 444
+            <WhatsAppIcon fontSize="large" /> (2920) 41-6145
           </a>
         </ListItem>
         <ListItem>

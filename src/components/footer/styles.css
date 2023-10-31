@@ -3,10 +3,18 @@
   .footerList li a{
     color:rgba(92, 92, 92, 1)
   }
+  .footerList li a:hover {
+    font-size:17px;
+  }
   .footerContainer {
     justify-content: space-between;
     padding:25px ;
     box-sizing: border-box;
-    width: 90% !important;
+    width: 92% !important;
+    margin:0 auto;
+  }
+  .logoFooter {
+    width:120px !important;
+    height: 120px !important;
   }
 }

@@ -11,7 +11,7 @@ const PiletaLibre = () => {
   ScrollToTop();
   return (
     <>
-      <Box sx={{ margin: "15vh auto" }} className="piletaLibreContainer">
+      <Box sx={{ margin: "20vh auto" }} className="piletaLibreContainer">
         <CardAcordeon
           imagen={"/assets/NatacionAdultos.png"}
           titulo={"Entrena a tu ritmo"}

@@ -21,6 +21,7 @@ span {
     .giftCardContainer {
         height: 40vh;
         flex-direction: row;
+        margin:10vh auto 25vh auto;
     }
     .giftTextContainer {
         width:43%;

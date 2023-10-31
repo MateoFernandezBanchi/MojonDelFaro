@@ -16,6 +16,8 @@ export const Clases = () => {
           display: "flex",
           flexDirection: "column",
           gap: "5vh",
+width:"98vw",
+overflow:"hidden"
         }}
       >
         <CardAcordeon
@@ -36,13 +38,13 @@ export const Clases = () => {
           subtitulo={"Profes: Mónica Millapi y Lucas Suarez."}
           texto1={"De 8 a 12 años"}
           texto2={"Miércoles 18h o Sábado 11h"}
-          precio={"$5500 - 2 veces por semana: $9500"}
+          precio={"$5500"}
         >
           <Box sx={{display:"flex", flexDirection:"column"}}>
           <Typography>
           La natación <span>desarrolla confianza y habilidades acuáticas</span> para disfrutar del agua de manera segura A través de <span>actividades interactivas y juegos</span> trabajamos <span>desde la flotación básica hasta las técnicas avanzadas de natación</span> promoviendo la autoestima, concentración y resistencia física.
           </Typography>
-          {/* <Typography sx={{fontSize:"20px", fontWeight:"semi-bold"}}>Precio 2 veces por semana: $9500</Typography> */}
+          <Typography sx={{fontSize:"20px", fontWeight:"semi-bold"}}>Precio 2 veces por semana: $9500</Typography>
           </Box>
         </CardAcordeon>
         <CardAcordeon

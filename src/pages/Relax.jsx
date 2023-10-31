@@ -37,20 +37,22 @@ const Relax = () => {
           subtitulo={"Sesión:30min"}
           texto1={""}
           precio={"$1500"}
-          texto={
-            "Es una cabina diseñada para 4 a 6 personas, con bancos para descansar. Se utilizan hidrolatos naturales elaborados en la zona (romero, menta y eucalipto) para actuar como expectorantes. La acción del calor purifica la piel, libera toxinas, y reduce arrugas. La combinación con una ducha fría estimula el sistema linfático para disolver bloqueos circulatorios y relaja la musculatura."
-          }
-        />
+      >
+        <Typography>
+        Es una cabina diseñada para <span>4 a 6 personas</span>, con bancos para descansar. Se utilizan <span>hidrolatos naturales</span> elaborados en la zona (romero, menta y eucalipto) para actuar como expectorantes. La acción del calor <span>purifica la piel, libera toxinas, y reduce arrugas.</span> La combinación con una ducha fría estimula el sistema linfático para disolver bloqueos circulatorios y relaja la musculatura.
+        </Typography>
+      </CardAcordeon>
         <CardAcordeon
           imagen={"/assets/HidromasajeSauna.png"}
           titulo={"Hidromasaje y sauna"}
           subtitulo={"Sesión: 1.30h"}
           texto1={""}
-          precio={"$2500"}
-          texto={
-            "Potenciá la experiencia del sauna combinandola con nuestra pileta. En ella vas a encontrar  hidromasajes  y espacio para nadar. Esta combinación no solo contribuye a mejorar la postura y liberar tensiones profundas, sino que también disuelve esas antiguas contracturas. Sumergirse en este entorno acuático brinda una tranquilidad profunda a nivel mental y emocional. Tu bienestar integral es nuestra prioridad, y esta combinación de elementos está diseñada para ofrecerte un rejuvenecimiento completo."
-          }
-        />
+          precio={"$3500"}
+        >
+          <Typography>
+          <span>Potenciá la experiencia del sauna combinandolo con nuestra pileta.</span> En la pileta vas a encontrar hidromasajes  y espacio para nadar. Esta combinación contribuye a <span>mejorar la postura y liberar tensiones profundas.</span> Sumergirse en este entorno acuático brinda una tranquilidad profunda a nivel mental y emocional. Tu <span>bienestar integral</span> es nuestra prioridad, y esta combinación de elementos está diseñada para ofrecerte un <span>rejuvenecimiento completo.</span>
+          </Typography>
+        </CardAcordeon>
         <Box className="giftCardContainer" id="giftCard" ref={giftCard}>
           <Box className="giftTextContainer">
             <Box sx={{marginLeft:"10px"}}>

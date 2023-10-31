@@ -17,5 +17,6 @@ ul li a p:hover {
     .logoNavbar {
         width:60px;
         height:60px;
+        margin-left:5vw;
     }
 }

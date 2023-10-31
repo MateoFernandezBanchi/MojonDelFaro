@@ -6,8 +6,8 @@ span {
 }
 @media screen and (min-width: 1024px) {
     .cardContent {
-        width:80%;
-        justify-content: flex-start;
+        width:50vw !important;
+        justify-content: center !important;
     }
   .imageCard {
     width: 40%;
@@ -20,16 +20,19 @@ span {
     width:auto;
     display:flex;
     flex-direction: column;
-
+    justify-content: center;
+    max-width: 100vw !important;
   }
   .cardMainContent div{
     display:flex;
     justify-content: space-between;
+    max-width: 100vw !important;
 
   }
   .cardFirstContent {
     display:flex;
     flex-direction: column;
+
   }
   .boxPrice {
     align-self: flex-end;
@@ -52,8 +55,7 @@ span {
   box-shadow: 0px 18px 15px -3px rgba(0,0,0,0.8) !important;
 }
 .cardAcordeonContainer {
-  margin:5vh 0;
-  margin-left: 30px;
-  
+  margin: 5vh auto;
+  width:80% !important;
 }
 }

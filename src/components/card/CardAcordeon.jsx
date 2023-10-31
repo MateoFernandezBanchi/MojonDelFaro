@@ -76,8 +76,8 @@ export default function CardAcordeon({
               xs: "100%", // Estilo para pantallas extra pequeñas
               sm: "100%", // Estilo para pantallas pequeñas
               md: "100%", // Estilo para pantallas medianas
-              lg: "30%", // Estilo para pantallas grandes
-              xl: "30%", // ,
+              lg: "35%", // Estilo para pantallas grandes
+              xl: "35%", // ,
             }
           }}
         />
