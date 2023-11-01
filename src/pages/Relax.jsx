@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React, { useEffect, useRef } from "react";
 import CardAcordeon from "../components/card/CardAcordeon";
-import { GreenButton } from "../components/button/WhatsappButton";
+import { GreenButton, WhatsappButton } from "../components/button/WhatsappButton";
 import CardNormas from "../components/card/CardNormas";
 import "./styles.css";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
@@ -29,7 +29,7 @@ const Relax = () => {
   }
   return (
     <>
-      <Box sx={{ margin: "15vh 0", width:"100vw", overflow:"hidden" }}>
+      <Box sx={{ marginTop: "15vh", width:"100vw", overflow:"hidden" }}>
         <CardAcordeon
           imagen={"/assets/SaunaSeco.png"}
           titulo={"Sauna Seco"}
@@ -52,6 +52,9 @@ const Relax = () => {
           <span>Potenciá la experiencia del sauna combinandolo con nuestra pileta.</span> En la pileta vas a encontrar hidromasajes  y espacio para nadar. Esta combinación contribuye a <span>mejorar la postura y liberar tensiones profundas.</span> Sumergirse en este entorno acuático brinda una tranquilidad profunda a nivel mental y emocional. Tu <span>bienestar integral</span> es nuestra prioridad, y esta combinación de elementos está diseñada para ofrecerte un <span>rejuvenecimiento completo.</span>
           </Typography>
         </CardAcordeon>
+        <Box sx={{display:"flex", justifyContent:"flex-end", width:"90vw", marginTop:"5vh"}}>
+        <WhatsappButton text="Reservá"/>
+        </Box>
         <Box className="giftCardContainer" id="giftCard" ref={giftCard}>
           <Box className="giftTextContainer">
             <Box sx={{marginLeft:"10px"}}>
@@ -74,9 +77,7 @@ const Relax = () => {
               que se merece.
             </Typography>
             </Box>
-            <GreenButton img="/assets/reactIcon.svg">
-              Quiero un voucher
-            </GreenButton>
+            <WhatsappButton text="Quiero un voucher"/>
           </Box>
           <Box
             sx={{

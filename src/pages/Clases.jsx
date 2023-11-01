@@ -30,7 +30,7 @@ export const Clases = () => {
     <>
       <Box
         sx={{
-          margin: "15vh auto",
+          marginTop: "15vh",
           display: "flex",
           flexDirection: "column",
           gap: "5vh",
@@ -83,8 +83,8 @@ overflow:"hidden"
           </Typography>
         </CardAcordeon>
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <WhatsappButton text={"inscripciones"} />
+      <Box sx={{ display: "flex", justifyContent: "center", margin:"5vh auto" }}>
+        <WhatsappButton text={"Inscripciones"} />
       </Box>
       <CardNormas />
     </>

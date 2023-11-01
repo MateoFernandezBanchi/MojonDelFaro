@@ -221,9 +221,8 @@ export const Inicio = () => {
               margin: "5vh auto",
             }}
           >
-              <GreenButton img="/assets/reactIcon.svg">
-              Quiero un turno
-            </GreenButton>
+              <WhatsappButton text="Quiero un turno"/>
+
           </Box>
         </Box>
         <Box className="horariosInicio horariosContainer">
@@ -310,9 +309,7 @@ export const Inicio = () => {
           Ofrecé relajación y serenidad con un voucher de acceso al hidromasaje
           y sauna, brindando un momento de calma y reconexión.
         </Typography>
-        <GreenButton img="/assets/reactIcon.svg">
-              Quiero un voucher
-            </GreenButton>
+        <WhatsappButton text="Quiero un voucher"/>
       </Box>
 
       <Box sx={{ width: "85vw", margin: "20px auto", padding: "8px 16px" }}>
