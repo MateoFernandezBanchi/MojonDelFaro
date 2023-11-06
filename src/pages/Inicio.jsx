@@ -1,17 +1,12 @@
-import { Avatar, Box, Divider, List, ListItem, Typography } from "@mui/material";
+import { Box, Divider, List, ListItem, Typography } from "@mui/material";
 import React from "react";
-import CardBlue from "../components/card/CardBlue";
-import {
-  GreenButton,
-  WhatsappButton,
-} from "../components/button/WhatsappButton";
+import { WhatsappButton } from "../components/button/WhatsappButton";
 import Banner from "../../public/assets/sauna-2.jpg";
 import CardServicios from "../components/card/CardServicios";
 import { Link } from "react-router-dom";
 import { MobileDiv } from "../components/MediaQuery/ResponsiveDiv";
 import "./styles.css";
 import ScrollToTop from "../helpers/ScrollToTop";
-
 
 export const Inicio = () => {
   ScrollToTop();
@@ -104,11 +99,8 @@ export const Inicio = () => {
             <h2>Clases</h2>
           </div>
           <Typography sx={{ width: "100%" }}>
-            Encontrá una actividad{" "}
-            <span>
-              adaptada para vos
-            </span>
-            . Nuestros grupos son reducidos y diseñados para cada etapa.
+            Encontrá una actividad <span>adaptada para vos</span>. Nuestros
+            grupos son reducidos y diseñados para cada etapa.
           </Typography>
         </ListItem>
 
@@ -173,16 +165,28 @@ export const Inicio = () => {
             />
           </Link>
           <Link to="/clases#gimnasiaAcuatica">
-            <CardServicios image={"/assets/GimnasiaAcuaticaSmall.jpg"} text={"Gimnasia Acuática"} />
+            <CardServicios
+              image={"/assets/GimnasiaAcuaticaSmall.jpg"}
+              text={"Gimnasia Acuática"}
+            />
           </Link>
           <Link to="/clases#natacionNinos">
-            <CardServicios image={"/assets/NatacionNiños.png"} text={"Natación Niños"} />
+            <CardServicios
+              image={"/assets/NatacionNiños.png"}
+              text={"Natación Niños"}
+            />
           </Link>
           <Link to="/clases#natacionAdultos">
-            <CardServicios image={"/assets/NatacionAdultos.png"} text={"Natación Adultos"} />
+            <CardServicios
+              image={"/assets/NatacionAdultos.png"}
+              text={"Natación Adultos"}
+            />
           </Link>
           <Link to="/relax">
-            <CardServicios image={"/assets/Relax.png"} text={"Hidromasaje y Sauna"} />
+            <CardServicios
+              image={"/assets/Relax.png"}
+              text={"Hidromasaje y Sauna"}
+            />
           </Link>
         </Box>
       </Box>
@@ -221,35 +225,32 @@ export const Inicio = () => {
               margin: "5vh auto",
             }}
           >
-              <WhatsappButton text="Quiero un turno"/>
-
+            <WhatsappButton text="Quiero un turno" />
           </Box>
         </Box>
         <Box className="horariosInicio horariosContainer">
-        <Box
-      sx={{
-        backgroundColor: "rgba(235, 143, 0, 1)",
-        borderRadius: "30px",
-        color: "white",
-        width: {
-          xs: "88%",
-          sm: "88%",
-          md: "70%",
-          lg: "60%",
-          xl: "60%",
-        
-        },
-        margin: "20px auto",
-        padding: "60px",
-        boxSizing: "border-box",
-        textAlign: "center",
-        minHeight:"20vh",
-        display:"flex",
-        flexDirection:"column",
-        justifyContent:"center"
-      }}
-      // className="cardBlue"
-    >
+          <Box
+            sx={{
+              backgroundColor: "rgba(235, 143, 0, 1)",
+              borderRadius: "30px",
+              color: "white",
+              width: {
+                xs: "88%",
+                sm: "88%",
+                md: "70%",
+                lg: "60%",
+                xl: "60%",
+              },
+              margin: "20px auto",
+              padding: "60px",
+              boxSizing: "border-box",
+              textAlign: "center",
+              minHeight: "20vh",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
             <Typography variant="h3" color={"white"} fontSize={"20px"}>
               Horarios
             </Typography>
@@ -309,7 +310,7 @@ export const Inicio = () => {
           Ofrecé relajación y serenidad con un voucher de acceso al hidromasaje
           y sauna, brindando un momento de calma y reconexión.
         </Typography>
-        <WhatsappButton text="Quiero un voucher"/>
+        <WhatsappButton text="Quiero un voucher" />
       </Box>
 
       <Box sx={{ width: "85vw", margin: "20px auto", padding: "8px 16px" }}>
@@ -334,7 +335,10 @@ export const Inicio = () => {
       </Box>
       <Box sx={{ width: "85vw", margin: "20px auto" }}>
         <Typography
-          variant="h3" color={"black"} fontSize={"24px"} sx={{padding:"10px"}}
+          variant="h3"
+          color={"black"}
+          fontSize={"24px"}
+          sx={{ padding: "10px" }}
         >
           ¿Como llegar al Mojón?
         </Typography>

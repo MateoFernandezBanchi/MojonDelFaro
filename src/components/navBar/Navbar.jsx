@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Avatar, Box, Button, Drawer, Typography, styled } from "@mui/material";
+import { Box, Button, Drawer} from "@mui/material";
 import * as React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
