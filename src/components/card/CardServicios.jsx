@@ -28,7 +28,9 @@ const CardServicios = ({image, text}) => {
         padding:"5px"
     }}>
     <Typography sx={{
-        color: "white"
+        color: "white",
+        textAlign:"right",
+        padding:"10px"
         }}>
         {text}
     </Typography>
