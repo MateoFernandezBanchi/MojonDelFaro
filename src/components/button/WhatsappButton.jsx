@@ -2,7 +2,8 @@ import { Avatar, Button, Typography } from "@mui/material";
 import React from "react";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import "./styles.css"
-const WhatsappButton = ({ text }) => {
+const WhatsappButton = ({ text, onClick }) => {
+
   return (
     <Button
     className="greenButton"
@@ -15,6 +16,7 @@ const WhatsappButton = ({ text }) => {
         width:"200px",
         borderRadius:"6px"
       }}
+      onClick={onClick}
     >
       <WhatsAppIcon fontSize="large" sx={{marginRight:"1px"}}/>
       <Typography fontSize="18px" color="white">{text}</Typography>
@@ -22,7 +24,7 @@ const WhatsappButton = ({ text }) => {
   );
 };
 
-const GreenButton = ({ img, children }) => {
+const GreenButton = ({ img, children, onClick }) => {
   return (
     <Button
     className="greenButton"
@@ -36,6 +38,7 @@ const GreenButton = ({ img, children }) => {
         width:"200px",
         borderRadius:"6px"
       }}
+      onClick={onClick}
     >
       <Avatar
                 src={img}

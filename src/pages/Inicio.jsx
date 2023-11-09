@@ -7,10 +7,11 @@ import { Link } from "react-router-dom";
 import { MobileDiv } from "../components/MediaQuery/ResponsiveDiv";
 import "./styles.css";
 import ScrollToTop from "../helpers/ScrollToTop";
+import { whatsappMessage } from "../helpers/whatsappMessage";
 
 export const Inicio = () => {
   ScrollToTop();
-
+  
   return (
     <Box sx={{ boxSizing: "border-box", marginTop: "10vh" }}>
       <MobileDiv>
@@ -225,7 +226,7 @@ export const Inicio = () => {
               margin: "5vh auto",
             }}
           >
-            <WhatsappButton text="Quiero un turno" />
+            <WhatsappButton text="Quiero un turno" onClick={()=> whatsappMessage('¡Hola! me gustaría recibir más información sobre el servicio de fotos360°!')}/>
           </Box>
         </Box>
         <Box className="horariosInicio horariosContainer">
@@ -310,7 +311,7 @@ export const Inicio = () => {
           Ofrecé relajación y serenidad con un voucher de acceso al hidromasaje
           y sauna, brindando un momento de calma y reconexión.
         </Typography>
-        <WhatsappButton text="Quiero un voucher" />
+        <WhatsappButton text="Quiero un voucher" onClick={()=> whatsappMessage('¡Hola! me gustaría recibir más información sobre el servicio de fotos360°!')}/>
       </Box>
 
       <Box sx={{ width: "85vw", margin: "20px auto", padding: "8px 16px" }}>
