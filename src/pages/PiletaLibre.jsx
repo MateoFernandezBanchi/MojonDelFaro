@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 import ScrollToTop from "../helpers/ScrollToTop";
 import "./styles.css";
 import { WhatsappButton } from "../components/button/WhatsappButton";
+import { whatsappMessage } from "../helpers/whatsappMessage";
 
 const PiletaLibre = () => {
   ScrollToTop();
@@ -45,7 +46,7 @@ const PiletaLibre = () => {
         </CardAcordeon>
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <WhatsappButton text="Turnos" />
+        <WhatsappButton text="Turnos" onClick={()=> whatsappMessage('¡Hola! Quisiera reservar un turno para la pileta 🏊. ¿En qué horarios está disponible? ¡Espero tu orientación!')}/>
       </Box>
       <Box
         className="giftCardContainer"

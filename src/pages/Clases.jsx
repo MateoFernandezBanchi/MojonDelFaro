@@ -4,6 +4,8 @@ import { Box, Typography } from "@mui/material";
 import { WhatsappButton } from "../components/button/WhatsappButton";
 import CardNormas from "../components/card/CardNormas";
 import { useLocation } from "react-router-dom";
+import { whatsappMessage } from "../helpers/whatsappMessage";
+
 
 export const Clases = () => {
   const location = useLocation();
@@ -84,7 +86,7 @@ overflow:"hidden"
         </CardAcordeon>
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center", margin:"5vh auto" }}>
-        <WhatsappButton text={"Inscripciones"} />
+        <WhatsappButton text={"Inscripciones"} onClick={()=> whatsappMessage('¡Hola! Me interesa inscribirme a clases 🏊‍♂️. ¿Me brindas más información acerca de los requisitos y modalidad de inscripción? ¡Gracias!')}/>
       </Box>
       <CardNormas />
     </>

@@ -226,7 +226,7 @@ export const Inicio = () => {
               margin: "5vh auto",
             }}
           >
-            <WhatsappButton text="Quiero un turno" onClick={()=> whatsappMessage('¡Hola! me gustaría recibir más información sobre el servicio de fotos360°!')}/>
+            <WhatsappButton text="Quiero un turno" onClick={()=> whatsappMessage('¡Hola! Me interesa conocer más sobre sus servicios. 🌟 ¿Podría proporcionarme más información? ¡Gracias!')}/>
           </Box>
         </Box>
         <Box className="horariosInicio horariosContainer">
@@ -311,7 +311,7 @@ export const Inicio = () => {
           Ofrecé relajación y serenidad con un voucher de acceso al hidromasaje
           y sauna, brindando un momento de calma y reconexión.
         </Typography>
-        <WhatsappButton text="Quiero un voucher" onClick={()=> whatsappMessage('¡Hola! me gustaría recibir más información sobre el servicio de fotos360°!')}/>
+        <WhatsappButton text="Quiero un voucher" onClick={()=> whatsappMessage('¡Hola! Me encantaría adquirir una Gift Card. 🎁 ¿Podrías brindarme más información? ¡Muchas gracias!')}/>
       </Box>
 
       <Box sx={{ width: "85vw", margin: "20px auto", padding: "8px 16px" }}>

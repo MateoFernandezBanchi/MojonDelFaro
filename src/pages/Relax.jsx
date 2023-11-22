@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React, { useEffect, useRef } from "react";
 import CardAcordeon from "../components/card/CardAcordeon";
-import { GreenButton, WhatsappButton } from "../components/button/WhatsappButton";
+import { WhatsappButton } from "../components/button/WhatsappButton";
 import CardNormas from "../components/card/CardNormas";
 import "./styles.css";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
@@ -28,7 +28,7 @@ const Relax = () => {
     window.scrollTo(0, 0);
   }
   return (
-    <>
+    
       <Box sx={{ marginTop: "15vh", width:"100vw", overflow:"hidden" }}>
         <CardAcordeon
           imagen={"/assets/SaunaSeco.png"}
@@ -53,7 +53,7 @@ const Relax = () => {
           </Typography>
         </CardAcordeon>
         <Box sx={{display:"flex", justifyContent:"flex-end", width:"90vw", marginTop:"5vh"}}>
-        <WhatsappButton text="Reservá"/>
+        <WhatsappButton text="Reservá"  onClick={()=> whatsappMessage('¡Hola! Me gustaría reservar una sesión de relax. 🌿  ¿Hay fechas y horarios disponibles? ¡Agradezco tu ayuda!')}/>
         </Box>
         <Box className="giftCardContainer" id="giftCard" ref={giftCard}>
           <Box className="giftTextContainer">
@@ -77,7 +77,7 @@ const Relax = () => {
               que se merece.
             </Typography>
             </Box>
-            <WhatsappButton text="Quiero un voucher"/>
+            <WhatsappButton text="Quiero un voucher" onClick={()=> whatsappMessage('¡Hola! Me encantaría adquirir una Gift Card. 🎁 ¿Podrías brindarme más información? ¡Muchas gracias!')}/>
           </Box>
           <Box
             sx={{
@@ -104,7 +104,6 @@ const Relax = () => {
         </Box>
         <CardNormas />
       </Box>
-    </>
   );
 };
 
