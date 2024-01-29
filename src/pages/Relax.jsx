@@ -6,11 +6,12 @@ import CardNormas from "../components/card/CardNormas";
 import "./styles.css";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
 import { useLocation } from "react-router-dom";
+import { whatsappMessage } from "../helpers/whatsappMessage";
 
 const Relax = () => {
   const giftCard = useRef();
   const location = useLocation();
-
+console.log(location.hash)
   useEffect(() => {
     if (location.hash === '') {
       scrollToTopInner();
@@ -20,7 +21,11 @@ const Relax = () => {
   }, [location.hash]);
 
   function scrollToForm() {
-    if (giftCard.current) {
+    const sectionId = location.hash.slice(1);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }else if (giftCard.current) {
       giftCard.current.scrollIntoView({ behavior: 'smooth' });
     }
   }
@@ -28,14 +33,13 @@ const Relax = () => {
     window.scrollTo(0, 0);
   }
   return (
-    
-      <Box sx={{ marginTop: "15vh", width:"100vw", overflow:"hidden" }}>
+    <Box sx={{ marginTop: "15vh", width:"100vw", overflow:"hidden" }}>
+        
         <CardAcordeon
           imagen={"/assets/SaunaSeco.png"}
           titulo={"Sauna Seco"}
           subtitulo={"Sesión:30min"}
           texto1={""}
-          precio={"$1500"}
       >
         <Typography>
         Es una cabina diseñada para <span>4 a 6 personas</span>, con bancos para descansar. Se utilizan <span>hidrolatos naturales</span> elaborados en la zona (romero, menta y eucalipto) para actuar como expectorantes. La acción del calor <span>purifica la piel, libera toxinas, y reduce arrugas.</span> La combinación con una ducha fría estimula el sistema linfático para disolver bloqueos circulatorios y relaja la musculatura.
@@ -46,11 +50,26 @@ const Relax = () => {
           titulo={"Hidromasaje y sauna"}
           subtitulo={"Sesión: 1.30h"}
           texto1={""}
-          precio={"$3500"}
         >
           <Typography>
           <span>Potenciá la experiencia del sauna combinandolo con nuestra pileta.</span> En la pileta vas a encontrar hidromasajes  y espacio para nadar. Esta combinación contribuye a <span>mejorar la postura y liberar tensiones profundas.</span> Sumergirse en este entorno acuático brinda una tranquilidad profunda a nivel mental y emocional. Tu <span>bienestar integral</span> es nuestra prioridad, y esta combinación de elementos está diseñada para ofrecerte un <span>rejuvenecimiento completo.</span>
           </Typography>
+        </CardAcordeon>
+        <Box  id="camaTermo" style={{marginBottom:"30px"}}></Box>
+        <CardAcordeon
+          imagen={"/assets/camaTermo2.jpg"}
+          titulo={"Cama termomasajeadora"}
+          subtitulo={"Con rodillos de Jade"}
+        >
+          <Box sx={{display:"flex", flexDirection:"column"}}>
+          <Typography>
+          La cama termomasajeadora es una camilla terapéutica que logra fusionar los avances de la tecnología moderna con la sabiduría y profundidad de las terapias ancestrales. En una sesión, podrás experimentar los beneficios de terapias como quiropraxia, acupresión, termoterapia, drenaje linfático y musicoterapia. La cama está diseñada para realizar masajes de cuerpo entero, personalizando la experiencia según tus necesidades y prioridades.
+Sus beneficios intervienen de forma integral, desde la regeneración celular hasta la alineación de la columna vertebral, generando una sanación completa.
+Las 12 esferas de jade y el calor infrarrojo de estas camillas alivian dolencias, mejoran la postura, alinean la columna vertebral, estimulan la circulación y el sistema glandular, brindando una sensación inmediata de bienestar. 
+
+          </Typography>
+
+          </Box>
         </CardAcordeon>
         <Box sx={{display:"flex", justifyContent:"flex-end", width:"90vw", marginTop:"5vh"}}>
         <WhatsappButton text="Reservá"  onClick={()=> whatsappMessage('¡Hola! Me gustaría reservar una sesión de relax. 🌿  ¿Hay fechas y horarios disponibles? ¡Agradezco tu ayuda!')}/>

@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import CardAcordeon from "../components/card/CardAcordeon";
 import { Box, Divider, Typography } from "@mui/material";
 import CardNormas from "../components/card/CardNormas";
-import { useLocation } from "react-router-dom";
+
 import ScrollToTop from "../helpers/ScrollToTop";
 import "./styles.css";
 import { WhatsappButton } from "../components/button/WhatsappButton";
@@ -18,7 +18,6 @@ const PiletaLibre = () => {
           titulo={"Entrena a tu ritmo"}
           subtitulo={"2 veces por semana."}
           texto1={""}
-          precio={"$8000"}
         >
           <Typography>
           Reservá <span>turnos mensuales fijos</span> para venir a nadar en el horario que más se acomode a tu rutina. Tendrás a disposición nuestros elementos y el uso de la pileta.
@@ -29,7 +28,6 @@ const PiletaLibre = () => {
           titulo={"Disfruta cuando quieras"}
           subtitulo={"Turno particular"}
           texto1={""}
-          precio={"$2500"}
         >
           <Box sx={{display:"flex", flexDirection:"column"}}>
           <Typography>

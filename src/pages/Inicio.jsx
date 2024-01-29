@@ -171,10 +171,10 @@ export const Inicio = () => {
               text={"Gimnasia Acuática"}
             />
           </Link>
-          <Link to="/clases#natacionNinos">
+          <Link to="/relax#camaTermo">
             <CardServicios
-              image={"/assets/NatacionNiños.png"}
-              text={"Natación Niños"}
+              image={"/assets/camaTermo2.jpg"}
+              text={"Cama termomasajeadora"}
             />
           </Link>
           <Link to="/clases#natacionAdultos">

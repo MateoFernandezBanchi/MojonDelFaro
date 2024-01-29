@@ -4,8 +4,16 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import "./styles.css"
+import { whatsappMessage } from "../../helpers/whatsappMessage";
 
 const Footer = () => {
+
+  const emailAddress = 'mail.mojon@gmail.com';
+  const subject = '';
+  const body = '';
+
+  const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
   return (
     <Box
       className="footerContainer"
@@ -42,22 +50,19 @@ const Footer = () => {
         className="logoFooter"
       />
       <List className="footerList">
-        <ListItem>
-          <a target="_blank" href="https://wa.me/+542920222444">
+        <ListItem sx={{cursor:"pointer"}}>
+          <a onClick={()=> whatsappMessage('')}>
             <WhatsAppIcon fontSize="large" /> (2920) 41-6145
           </a>
         </ListItem>
-        <ListItem>
-          <a target="_blank" href="https://www.instagram.com/_mojo_del_faro/">
+        <ListItem >
+          <a target="_blank" href="https://www.instagram.com/mojondelfaro.pileta.spa" >
             <InstagramIcon fontSize="large" />
             mojóndelfaro
           </a>
         </ListItem>
         <ListItem>
-          <a
-            href="<EMAIL>?subject=Contacto%20de%20la%20web&body=<NAME>%2C
-        Me gustaría saber más sobre los servicios que ofrecemos."
-          >
+          <a href={mailtoLink}>
             <MailOutlineIcon fontSize="large" />
             mail.mojon@gmail.com
           </a>

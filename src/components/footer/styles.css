@@ -4,7 +4,7 @@
     color:rgba(92, 92, 92, 1)
   }
   .footerList li a:hover {
-    font-size:17px;
+    font-size:15px;
   }
   .footerContainer {
     justify-content: space-between;

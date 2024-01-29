@@ -40,22 +40,21 @@ width:"98vw",
 overflow:"hidden"
         }}
       >
-        <Box  id="natacionAdultos"></Box>
+        <Box  id="natacionAdultos" style={{marginBottom:"30px"}}></Box>
         <CardAcordeon
           imagen={"/assets/NatacionAdultos.png"}
           titulo={"Natación Adultos"}
           subtitulo={"Profe: Lucas Suarez"}
           texto1={"Martes y miércoles "}
           texto2={"17.30 a 18.30"}
-          precio={"$6500"}
           id="natacionAdultos"
         >
           <Typography>
           La natación es una forma relajante de hacer ejercicio para todo el cuerpo. Es una actividad que tonifica los músculos, protege las articulaciones, mejora la circulación, favorece el sistema cardiovascular, recompone la postura y reduce la presión arterial, al mismo tiempo que proporciona <span>calma mental, concentración y conexión con nuestro cuerpo.</span>
           </Typography>
         </CardAcordeon>
-        <Box  id="natacionNinos"></Box>
-        <CardAcordeon
+        
+        {/* <CardAcordeon
           imagen={"/assets/NatacionNiños.png"}
           titulo={"Natación Niños"}
           subtitulo={"Profes: Mónica Millapi y Lucas Suarez."}
@@ -69,7 +68,7 @@ overflow:"hidden"
           </Typography>
           <Typography sx={{fontSize:"20px", fontWeight:"semi-bold"}}>Precio 2 veces por semana: $9500</Typography>
           </Box>
-        </CardAcordeon>
+        </CardAcordeon> */}
         <Box  id="gimnasiaAcuatica"></Box>
         <CardAcordeon
           imagen={"/assets/GimnasiaAcuatica.jpg"}
@@ -77,7 +76,6 @@ overflow:"hidden"
           subtitulo={"Profe: Lucas Suarez"}
           texto1={"Martes y miércoles"}
           texto2={"17.30 a 18.30hs"}
-          precio={"$9000"}
           id="gimnasiaAcuatica"
         >
           <Typography>
