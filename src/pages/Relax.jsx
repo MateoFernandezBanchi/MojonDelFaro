@@ -11,7 +11,7 @@ import { whatsappMessage } from "../helpers/whatsappMessage";
 const Relax = () => {
   const giftCard = useRef();
   const location = useLocation();
-console.log(location.hash)
+
   useEffect(() => {
     if (location.hash === '') {
       scrollToTopInner();
